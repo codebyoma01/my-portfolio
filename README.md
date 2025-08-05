@@ -29,5 +29,5 @@ Built with HTML, CSS, and JavaScript to showcase my skills, projects, and contac
 ## 📬 Contact
 
 Feel free to reach out:
-- Email: yourname@example.com
+- Email: patrickijeoma450@gmail.com
 - LinkedIn: [Your LinkedIn](https://www.linkedin.com/in/yourprofile)
