@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Skills - Ijeoma Ogbenna</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="container">
+    <h1 class="logo">Ijeoma Ogbenna</h1>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="skills.html" class="active">Skills</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <button id="theme-toggle" aria-label="Toggle Dark/Light Mode">🌙</button>
+  </header>
+
+  <main class="container">
+    <section class="skills-section">
+      <h2>Technical Skills</h2>
+      <ul class="skills-list">
+        <li><strong>Languages:</strong> HTML5, CSS3, JavaScript, Python</li>
+        <li><strong>Frameworks:</strong> Django, React</li>
+        <li><strong>Tools:</strong> Git, GitHub, VS Code, Figma</li>
+        <li><strong>Design:</strong> UI/UX Design, Responsive Layouts, Wireframing</li>
+        <li><strong>Others:</strong> REST APIs, Firebase, localStorage, Debugging</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="container">
+    <p>&copy; 2025 Ijeoma Ogbenna. All rights reserved.</p>
+  </footer>
+
+  <script>
+    const toggleBtn = document.getElementById('theme-toggle');
+    const body = document.body;
+
+    if (localStorage.getItem('theme') === 'light') {
+      body.classList.add('light');
+      toggleBtn.textContent = '🌞';
+    } else {
+      toggleBtn.textContent = '🌙';
+    }
+
+    toggleBtn.addEventListener('click', () => {
+      body.classList.toggle('light');
+      if (body.classList.contains('light')) {
+        toggleBtn.textContent = '🌞';
+        localStorage.setItem('theme', 'light');
+      } else {
+        toggleBtn.textContent = '🌙';
+        localStorage.setItem('theme', 'dark');
+      }
+    });
+  </script>
+</body>
+</html>
