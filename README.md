@@ -30,4 +30,4 @@ Built with HTML, CSS, and JavaScript to showcase my skills, projects, and contac
 
 Feel free to reach out:
 - Email: patrickijeoma450@gmail.com
-- LinkedIn: [Your LinkedIn](https://www.linkedin.com/in/yourprofile)
+- LinkedIn: [[https://www.linkedin.com/in/ijeoma-ogbenna-a20771358/](https://www.linkedin.com/in/ijeoma-ogbenna-a20771358/)]
