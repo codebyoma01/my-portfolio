@@ -1,17 +1,24 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>About - Ijeoma Ogbenna</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
+
   <link rel="stylesheet" href="css/style.css" />
 </head>
+
 <body>
-  <header class="container">
-    <h1 class="site-title">Ijeoma Ogbenna</h1>
+  <header class="container header-flex">
+    <h1 class="logo">Ijeoma Ogbenna</h1>
+
+    <button class="menu-toggle" aria-label="Toggle Menu">&#9776;</button>
+
     <nav>
-      <ul class="nav-menu">
+      <ul class="nav-links" role="menu">
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html" class="active">About</a></li>
         <li><a href="skills.html">Skills</a></li>
@@ -19,48 +26,63 @@
         <li><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
+
     <button id="theme-toggle" aria-label="Toggle Dark/Light Mode">🌙</button>
   </header>
 
-  <main class="container hero">
-    <section>
+  
+  <main class="container">
+    <section class="about-page section">
       <h2>About Me</h2>
       <p>
-        Hello! I’m <strong>Ijeoma Ogbenna</strong>, a passionate full-stack developer and designer based in Nigeria. I build responsive and interactive web apps with a focus on clean code, user centered design, and seamless functionality.
+        Hi 👋 I’m <strong>Ijeoma Ogbenna</strong>, a passionate <em>Web Developer</em> and <em>UI/UX enthusiast</em>.
+        I love turning ideas into clean, user friendly designs and fully functional web applications.
       </p>
       <p>
-        I specialize in <strong>HTML, CSS, JavaScript, Django</strong>, and <strong>React</strong>  and I’m always eager to learn new technologies that help me create meaningful digital experiences.
+        My journey into tech started with curiosity about how websites work, and today I specialize in building modern,
+        responsive, and scalable solutions using <strong>HTML, CSS, JavaScript, and Django</strong>.
       </p>
       <p>
-        Beyond coding, I love crafting UI/UX designs, exploring creative side projects, and contributing to solutions that improve everyday life.
+        Outside of coding, I enjoy exploring creative design, sharing knowledge, and contributing to meaningful projects.
       </p>
     </section>
   </main>
 
-  <footer class="container">
-    <p>&copy; 2025 Ijeoma Ogbenna. All rights reserved.</p>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 Ijeoma Ogbenna. All rights reserved.</p>
+    </div>
   </footer>
 
   <script>
-    const toggleBtn = document.getElementById('theme-toggle');
+    const toggleBtn = document.getElementById("theme-toggle");
     const body = document.body;
 
-    if (localStorage.getItem('theme') === 'light') {
-      body.classList.add('light');
-      toggleBtn.textContent = '🌞';
+   
+    if (localStorage.getItem("theme") === "light") {
+      body.classList.add("light");
+      toggleBtn.textContent = "🌞";
     } else {
-      toggleBtn.textContent = '🌙';
+      toggleBtn.textContent = "🌙";
     }
 
-    toggleBtn.addEventListener('click', () => {
-      body.classList.toggle('light');
-      if (body.classList.contains('light')) {
-        toggleBtn.textContent = '🌞';
-        localStorage.setItem('theme', 'light');
+    toggleBtn.addEventListener("click", () => {
+      body.classList.toggle("light");
+      if (body.classList.contains("light")) {
+        toggleBtn.textContent = "🌞";
+        localStorage.setItem("theme", "light");
       } else {
-        toggleBtn.textContent = '🌙';
-        localStorage.setItem('theme', 'dark');
+        toggleBtn.textContent = "🌙";
+        localStorage.setItem("theme", "dark");
       }
+    });
+
+    const menuToggle = document.querySelector(".menu-toggle");
+    const nav = document.querySelector("nav");
+
+    menuToggle.addEventListener("click", () => {
+      nav.classList.toggle("active");
     });
   </script>
 </body>

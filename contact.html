@@ -2,15 +2,23 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Contact - Ijeoma Ogbenna</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
+
   <link rel="stylesheet" href="css/style.css" />
 </head>
+
 <body>
-  <header class="container">
-    <h1 class="site-title">Ijeoma Ogbenna</h1>
+  <header class="container header-flex">
+    <h1 class="logo">Ijeoma Ogbenna</h1>
+
+    <button class="menu-toggle" aria-label="Toggle Menu">&#9776;</button>
+
     <nav>
-      <ul class="nav-menu">
+      <ul class="nav-links" role="menu">
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="skills.html">Skills</a></li>
@@ -18,49 +26,72 @@
         <li><a href="contact.html" class="active">Contact</a></li>
       </ul>
     </nav>
+
     <button id="theme-toggle" aria-label="Toggle Dark/Light Mode">🌙</button>
   </header>
-
   <main class="container">
-    <section id="contact" class="section">
-      <div class="container">
-        <h2 class="section-title">Get in Touch</h2>
-        <form action="https://formspree.io/f/xdkdwege" method="POST" class="contact-form">
-          <label for="email">Your Email</label>
-          <input type="email" name="email" id="email" required>
-        
-          <label for="message">Your Message</label>
-          <textarea name="message" id="message" rows="5" required></textarea>
-        
-          <button type="submit">Send Message</button>
-        </form>
-               
+    <section class="contact-page section">
+      <h2>Contact Me</h2>
+      <p>Have a project in mind? Let's connect!</p>
+
+      <div class="contact-grid">
+        <div class="contact-info">
+          <p><strong>Email:</strong> <a href="mailto:patrickijeoma450@gmail.com">patrickijeoma450@gmail.com</a></p>
+          <p><strong>Phone:</strong> <a href="tel:+2349059398498">+234 905 939 8498</a></p>
+          <p><strong>Location:</strong> Nigeria</p>
+        </div>
+
+        <div class="contact-form">
+          <form action="mailto:patrickijeoma450@gmail.com" method="POST" enctype="text/plain">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" required />
+
+            <label for="email">Your Email</label>
+            <input type="email" id="email" name="email" required />
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <button type="submit" class="btn">Send Message</button>
+          </form>
+        </div>
       </div>
-    </section>    
+    </section>
   </main>
 
-  <footer class="container">
-    <p>&copy; 2025 Ijeoma Ogbenna. All rights reserved.</p>
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 Ijeoma Ogbenna. All rights reserved.</p>
+    </div>
   </footer>
 
   <script>
-    const toggleBtn = document.getElementById('theme-toggle');
+    const toggleBtn = document.getElementById("theme-toggle");
     const body = document.body;
 
-    if (localStorage.getItem('theme') === 'light') {
-      body.classList.add('light');
-      toggleBtn.textContent = '🌞';
+    if (localStorage.getItem("theme") === "light") {
+      body.classList.add("light");
+      toggleBtn.textContent = "🌞";
+    } else {
+      toggleBtn.textContent = "🌙";
     }
 
-    toggleBtn.addEventListener('click', () => {
-      body.classList.toggle('light');
-      if (body.classList.contains('light')) {
-        toggleBtn.textContent = '🌞';
-        localStorage.setItem('theme', 'light');
+    toggleBtn.addEventListener("click", () => {
+      body.classList.toggle("light");
+      if (body.classList.contains("light")) {
+        toggleBtn.textContent = "🌞";
+        localStorage.setItem("theme", "light");
       } else {
-        toggleBtn.textContent = '🌙';
-        localStorage.setItem('theme', 'dark');
+        toggleBtn.textContent = "🌙";
+        localStorage.setItem("theme", "dark");
       }
+    });
+
+    const menuToggle = document.querySelector(".menu-toggle");
+    const nav = document.querySelector("nav");
+
+    menuToggle.addEventListener("click", () => {
+      nav.classList.toggle("active");
     });
   </script>
 </body>
