@@ -5,13 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Projects - Ijeoma Ogbenna</title>
 
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
-
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/style.css" />
 </head>
 
 <body>
+  <!-- Header -->
   <header class="container header-flex">
     <h1 class="logo">Ijeoma Ogbenna</h1>
 
@@ -30,57 +29,68 @@
     <button id="theme-toggle" aria-label="Toggle Dark/Light Mode">🌙</button>
   </header>
 
+  <!-- Projects -->
   <main class="container">
     <section class="projects-page section">
       <h2>My Projects</h2>
       <p>Here are some of my featured works:</p>
 
       <div class="projects-grid">
+
         <div class="project-card">
           <h3>Loveberry</h3>
           <p>A responsive Nigerian food website with a full menu, order form, and contact page.</p>
-          <a href="https://codebyoma01.github.io/loveberry/" target="_blank">View Project</a>
+          <a href="https://codebyoma01.github.io/loveberry/" target="_blank" class="btn">Live Demo</a>
+          <a href="https://github.com/codebyoma01/loveberry" target="_blank" class="btn">GitHub</a>
         </div>
 
         <div class="project-card">
           <h3>OmaMart</h3>
           <p>An eCommerce platform featuring product pages, cart system, and Render deployment.</p>
-          <a href="https://omamart-ecommerce.onrender.com" target="_blank">View Project</a>
+          <a href="https://omamart-ecommerce.onrender.com" target="_blank" class="btn">Live Demo</a>
+          <a href="https://github.com/codebyoma01/omamart" target="_blank" class="btn">GitHub</a>
         </div>
 
         <div class="project-card">
           <h3>OmaCare</h3>
           <p>Health and beauty landing page built with clean design and mobile-first layout.</p>
-          <a href="https://omacare.netlify.app/" target="_blank">View Project</a>
+          <a href="https://omacare.netlify.app/" target="_blank" class="btn">Live Demo</a>
+          <a href="https://github.com/codebyoma01/omacare" target="_blank" class="btn">GitHub</a>
         </div>
 
         <div class="project-card">
           <h3>Nura by Oma</h3>
           <p>Elegant skincare brand site with product detail pages and smooth UI effects.</p>
-          <a href="https://nura-by-oma.netlify.app/" target="_blank">View Project</a>
+          <a href="https://nura-by-oma.netlify.app/" target="_blank" class="btn">Live Demo</a>
+          <a href="https://github.com/codebyoma01/nura-by-oma" target="_blank" class="btn">GitHub</a>
         </div>
 
         <div class="project-card">
           <h3>OneDayPlan Generator</h3>
           <p>A fun web app that generates spontaneous hangout plans for couples or friends.</p>
-          <a href="https://codebyoma01.github.io/OneDayPlan-G/" target="_blank">View Project</a>
+          <a href="https://codebyoma01.github.io/OneDayPlan-G/" target="_blank" class="btn">Live Demo</a>
+          <a href="https://github.com/codebyoma01/OneDayPlan-G" target="_blank" class="btn">GitHub</a>
         </div>
 
         <div class="project-card">
           <h3>Iykvel Site</h3>
           <p>A tile and marble business website showcasing products, categories, and contact info.</p>
-          <a href="https://iykvel-site.vercel.app/" target="_blank">View Project</a>
+          <a href="https://iykvel-site.vercel.app/" target="_blank" class="btn">Live Demo</a>
+          <a href="https://github.com/codebyoma01/iykvel-site" target="_blank" class="btn">GitHub</a>
         </div>
+
       </div>
     </section>
   </main>
 
+  <!-- Footer -->
   <footer class="footer">
     <div class="container">
       <p>&copy; 2025 Ijeoma Ogbenna. All rights reserved.</p>
     </div>
   </footer>
 
+  <!-- Script -->
   <script>
     const toggleBtn = document.getElementById("theme-toggle");
     const body = document.body;
