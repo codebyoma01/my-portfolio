@@ -1,150 +1,163 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Ijeoma Ogbenna | Web Developer</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ijeoma Ogbenna | Portfolio</title>
 
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="css/style.css" />
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/a2e0e6ad4d.js" crossorigin="anonymous"></script>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
-  <header class="container header-flex">
-    <h1 class="logo">Ijeoma Ogbenna</h1>
-
-    <button class="menu-toggle" aria-label="Toggle Menu">&#9776;</button>
-
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="logo">CodeByOma</div>
     <nav>
-      <ul class="nav-links" role="menu">
+      <ul class="nav-links">
         <li><a href="index.html" class="active">Home</a></li>
         <li><a href="about.html">About</a></li>
-        <li><a href="skills.html">Skills</a></li>
-        <li><a href="projects.html">Projects</a></li>
+        <li><a href="portfolio.html">Projects</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
     </nav>
-
-    <button id="theme-toggle" aria-label="Toggle Dark/Light Mode">🌙</button>
   </header>
 
-  <main>
-    <section class="hero">
-      <div class="container hero-flex">
-        <div class="hero-text">
-          <h2>Hello, I'm Ijeoma</h2>
-          <p>A passionate Web Developer who builds with HTML, CSS & Django.</p>
-          <a href="#projects" class="btn">View My Work</a>
-        </div>
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <div class="hero-inner">
+        <!-- Your Picture -->
         <div class="hero-image">
-          <img src="images/ijeoma.JPG" alt="Portrait of Ijeoma Ogbenna, Web Developer" />
+          <img src="images/ijeoma.jpg" alt="Ijeoma Ogbenna">
+        </div>
+        <div class="hero-text">
+          <h1>Hello, I'm <span class="typing highlight"></span></h1>
+          <h2 class="tagline">A passionate Frontend Developer & UI/UX Designer crafting sleek, modern, and user-friendly web experiences.</h2>
+          <div class="hero-buttons">
+            <a href="portfolio.html" class="btn primary">View My Work</a>
+            <a href="about.html" class="btn secondary">About Me</a>
+          </div>
         </div>
       </div>
-    </section>
-
-    <section class="about section">
-      <div class="container">
-        <h2>About Me</h2>
-        <p>
-          I'm a dedicated web developer with a strong focus on frontend and backend development using Django.
-          I love building beautiful, functional websites.
-        </p>
-      </div>
-    </section>
-
- 
-    <section id="projects" class="projects section">
-      <div class="container">
-        <h2 class="section-title">Projects</h2>
-        <div class="projects-grid">
-          <div class="project-card">
-            <h3>Loveberry</h3>
-            <p>A responsive Nigerian food website with a full menu, order form, and contact page.</p>
-            <a href="https://codebyoma01.github.io/loveberry/" target="_blank">View Project</a>
-          </div>
-
-          <div class="project-card">
-            <h3>OmaMart</h3>
-            <p>An eCommerce platform featuring product pages, cart system, and Render deployment.</p>
-            <a href="https://omamart-ecommerce.onrender.com" target="_blank">View Project</a>
-          </div>
-
-          <div class="project-card">
-            <h3>OmaCare</h3>
-            <p>Health and beauty landing page built with clean design and mobile-first layout.</p>
-            <a href="https://omacare.netlify.app/" target="_blank">View Project</a>
-          </div>
-
-          <div class="project-card">
-            <h3>Nura by Oma</h3>
-            <p>Elegant skincare brand site with product detail pages and smooth UI effects.</p>
-            <a href="https://nura-by-oma.netlify.app/" target="_blank">View Project</a>
-          </div>
-
-          <div class="project-card">
-            <h3>OneDayPlan Generator</h3>
-            <p>A fun web app that generates spontaneous hangout plans for couples or friends.</p>
-            <a href="https://codebyoma01.github.io/OneDayPlan-G/" target="_blank">View Project</a>
-          </div>
-
-          <div class="project-card">
-            <h3>Iykvel Site</h3>
-            <p>A tile and marble business website showcasing products, categories, and contact info.</p>
-            <a href="https://iykvel-site.vercel.app/" target="_blank">View Project</a>
-          </div>
-          <div class="project-card">
-            <h3>SparklePro</h3>
-            <p>A modern, responsive website showcasing SparklePro's products and services with smooth UI effects and interactive features.</p>
-            <a href="https://sparklepro.onrender.com" target="_blank">View Project</a>
-        </div>
-      </div>
-    </section>
-
-    <section id="contact" class="contact section">
-      <div class="container">
-        <h2>Contact Me</h2>
-        <p>Have a project in mind? Let's connect!</p>
-        <a href="mailto:patrickijeoma450@gmail.com">Send me an email</a>
-      </div>
-    </section>
-  </main>
-
-  <footer class="footer">
-    <div class="container">
-      <p>&copy; 2025 Ijeoma Ogbenna. All rights reserved.</p>
     </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section class="skills">
+    <div class="container">
+      <h2 class="section-title">My <span class="highlight">Skills</span></h2>
+      <p class="section-subtitle">Technologies and tools I work with to build modern, responsive websites.</p>
+      <div class="skills-grid">
+        <div class="skill-card"><i class="fab fa-html5"></i><h3>HTML5</h3></div>
+        <div class="skill-card"><i class="fab fa-css3-alt"></i><h3>CSS3</h3></div>
+        <div class="skill-card"><i class="fab fa-js-square"></i><h3>JavaScript</h3></div>
+        <div class="skill-card"><i class="fab fa-python"></i><h3>Django</h3></div>
+        <div class="skill-card"><i class="fab fa-git-alt"></i><h3>Git</h3></div>
+        <div class="skill-card"><i class="fas fa-pencil-ruler"></i><h3>UI/UX Design</h3></div>
+        <div class="skill-card"><i class="fas fa-layer-group"></i><h3>Figma</h3></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Certificates Section -->
+  <section id="certificates" class="projects">
+    <h2 class="section-title">Certificates & <span class="highlight">Achievements</span></h2>
+    <p class="section-subtitle">A few certifications showcasing my learning journey and expertise.</p>
+    <div class="project-grid">
+      
+      <div class="project-card">
+        <div class="img-box">
+          <img src="images/cert-uiux.jpg" alt="UI/UX Design Certificate">
+        </div>
+        <h3>UI/UX Design Certificate</h3>
+        <p>Earned from <strong>Bizmarrow Technologies</strong>  practical training in user interface and experience design.</p>
+        <a href="images/UIUX-Bizmarrow.pdf" class="btn secondary" target="_blank">View Certificate</a>
+      </div>
+
+      <div class="project-card">
+        <div class="img-box">
+          <img src="images/cert-django.jpg" alt="Full Stack Certificate">
+        </div>
+        <h3>Full Stack Development Certificate</h3>
+        <p>Completed <strong>Bizmarrow Technologies</strong> full stack web development program using HTML, CSS, JS & Django.</p>
+        <a href="images/FullStack-Bizmarrow.pdf" class="btn secondary" target="_blank">View Certificate</a>
+      </div>
+
+      <div class="project-card">
+        <div class="img-box">
+          <img src="images/cert-html.jpg" alt="Coursera Certificate">
+        </div>
+        <h3>HTML, CSS & JavaScript (Meta)</h3>
+        <p>Completed Coursera’s “Introduction to HTML, CSS, and JavaScript” by Meta.</p>
+        <a href="images/Coursera-certificate.pdf" class="btn secondary" target="_blank">View Certificate</a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 CodeByOma | Designed with 💻 & ❤️ by Ijeoma Ogbenna</p>
   </footer>
 
- 
+  <!-- Typing Animation -->
   <script>
-    const toggleBtn = document.getElementById("theme-toggle");
-    const body = document.body;
+    const phrases = ["Ijeoma Ogbenna", "Frontend Developer", "UI/UX Designer"];
+    const typingSpan = document.querySelector(".typing");
+    let i = 0, j = 0, currentPhrase = [], isDeleting = false;
 
-    if (localStorage.getItem("theme") === "light") {
-      body.classList.add("light");
-      toggleBtn.textContent = "🌞";
-    } else {
-      toggleBtn.textContent = "🌙";
+    function loop() {
+      const current = phrases[i];
+      const speed = isDeleting ? 80 : 120;
+
+      if (!isDeleting && j < current.length) {
+        currentPhrase.push(current[j]);
+        j++;
+        typingSpan.textContent = currentPhrase.join("");
+      }
+
+      if (isDeleting && j > 0) {
+        currentPhrase.pop();
+        j--;
+        typingSpan.textContent = currentPhrase.join("");
+      }
+
+      if (!isDeleting && j === current.length) {
+        isDeleting = true;
+        setTimeout(loop, 1000);
+        return;
+      }
+
+      if (isDeleting && j === 0) {
+        isDeleting = false;
+        i = (i + 1) % phrases.length;
+      }
+
+      setTimeout(loop, speed);
     }
 
-    toggleBtn.addEventListener("click", () => {
-      body.classList.toggle("light");
-      if (body.classList.contains("light")) {
-        toggleBtn.textContent = "🌞";
-        localStorage.setItem("theme", "light");
-      } else {
-        toggleBtn.textContent = "🌙";
-        localStorage.setItem("theme", "dark");
-      }
-    });
+    window.onload = loop;
+  </script>
 
-    const menuToggle = document.querySelector(".menu-toggle");
-    const nav = document.querySelector("nav");
+  <!-- Hamburger Menu Script -->
+  <script>
+    const hamburger = document.querySelector('.hamburger');
+    const navLinks = document.querySelector('.nav-links');
 
-    menuToggle.addEventListener("click", () => {
-      nav.classList.toggle("active");
+    hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle('open');
+      hamburger.classList.toggle('toggle');
     });
   </script>
 </body>

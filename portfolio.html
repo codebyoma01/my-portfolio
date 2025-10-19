@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio | Ijeoma Ogbenna</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/a2e0e6ad4d.js" crossorigin="anonymous"></script>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="logo">CodeByOma</div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="portfolio.html" class="active">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Projects Section -->
+  <section class="projects">
+    <div class="container">
+      <h2 class="section-title">My <span class="highlight">Projects</span></h2>
+      <p class="section-subtitle">
+        A showcase of my recent work, including clean designs, interactive experiences, and functional web apps.
+      </p>
+
+      <div class="projects-grid">
+        <!-- Web Development Projects -->
+        <a href="https://codebyoma01.github.io/loveberry/" target="_blank" class="project-card">
+          <div class="project-image">
+            <img src="images/IMG_2938.jpg" alt="Loveberry">
+          </div>
+          <div class="project-content">
+            <h3>Loveberry</h3>
+            <p>A responsive Nigerian food website with clean UI, menu, order form, and multi-page layout.</p>
+          </div>
+        </a>
+
+        <a href="https://omamart-ecommerce.onrender.com" target="_blank" class="project-card">
+          <div class="project-image">
+            <img src="images/IMG_6180.PNG" alt="OmaMart">
+          </div>
+          <div class="project-content">
+            <h3>OmaMart</h3>
+            <p>An eCommerce platform demo with products, cart, and smooth UI experience.</p>
+          </div>
+        </a>
+
+        <a href="https://omacare.netlify.app/" target="_blank" class="project-card">
+          <div class="project-image">
+            <img src="images/IMG_6181.PNG" alt="OmaCare">
+          </div>
+          <div class="project-content">
+            <h3>OmaCare</h3>
+            <p>A health-focused project featuring appointment booking and modern, clean design.</p>
+          </div>
+        </a>
+
+        <a href="https://nura-by-oma.netlify.app/" target="_blank" class="project-card">
+          <div class="project-image">
+            <img src="images/IMG_6182.PNG" alt="Nura by Oma">
+          </div>
+          <div class="project-content">
+            <h3>Nura by Oma</h3>
+            <p>A skincare website with product pages, preorders, and interactive UI components.</p>
+          </div>
+        </a>
+
+        <a href="https://iykvel-site.vercel.app/" target="_blank" class="project-card">
+          <div class="project-image">
+            <img src="images/IMG_6184.PNG" alt="IYKVEL Site">
+          </div>
+          <div class="project-content">
+            <h3>IYKVEL Site</h3>
+            <p>A web project with unique branding, responsive layout, and smooth animations.</p>
+          </div>
+        </a>
+
+        <a href="https://sparklepro.onrender.com" target="_blank" class="project-card">
+          <div class="project-image">
+            <img src="images/IMG_6183.PNG" alt="SparklePro">
+          </div>
+          <div class="project-content">
+            <h3>SparklePro</h3>
+            <p>An interactive, modern web project showcasing design skills and responsiveness.</p>
+          </div>
+        </a>
+
+        <a href="https://hydrapure.example.com" target="_blank" class="project-card">
+          <div class="project-image">
+            <img src="images/hydrapure.png" alt="HydraPure">
+          </div>
+          <div class="project-content">
+            <h3>HydraPure</h3>
+            <p>A mini eCommerce skincare demo with cart, product details, and smooth UI.</p>
+          </div>
+        </a>
+
+        <!-- UI/UX Design Projects -->
+        <a href="projects/uiux1.html" target="_blank" class="project-card">
+          <div class="project-image">
+            <img src="images/Frame 1.png" alt="UI/UX Project 1">
+          </div>
+          <div class="project-content">
+            <h3>UI/UX Design - App Redesign</h3>
+            <p>Modern mobile app redesign focusing on user flow, wireframes, and visual aesthetics.</p>
+          </div>
+        </a>
+
+        <a href="projects/uiux2.html" target="_blank" class="project-card">
+          <div class="project-image">
+            <img src="images/Frame 3.png" alt="UI/UX Project 2">
+          </div>
+          <div class="project-content">
+            <h3>Website UX Overhaul</h3>
+            <p>Improved website usability with wireframes, prototyping, and user testing feedback.</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Portfolio by Ijeoma  Designed with 💻 & ❤️</p>
+  </footer>
+
+  <!-- Hamburger Menu Script -->
+  <script>
+    const hamburger = document.querySelector('.hamburger');
+    const navLinks = document.querySelector('.nav-links');
+
+    hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle('open');
+      hamburger.classList.toggle('toggle');
+    });
+  </script>
+</body>
+</html>

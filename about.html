@@ -1,98 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>About - Ijeoma Ogbenna</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About | Ijeoma Ogbenna</title>
 
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="css/style.css" />
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/a2e0e6ad4d.js" crossorigin="anonymous"></script>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
-  <header class="container header-flex">
-    <h1 class="logo">Ijeoma Ogbenna</h1>
-
-    <button class="menu-toggle" aria-label="Toggle Menu">&#9776;</button>
-
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="logo">CodeByOma</div>
     <nav>
-      <ul class="nav-links" role="menu">
+      <ul class="nav-links">
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html" class="active">About</a></li>
-        <li><a href="skills.html">Skills</a></li>
-        <li><a href="projects.html">Projects</a></li>
+        <li><a href="portfolio.html">Projects</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
     </nav>
-
-    <button id="theme-toggle" aria-label="Toggle Dark/Light Mode">🌙</button>
   </header>
 
-  
-  <main class="container">
-    <section class="about"></section>
-      <h1>About Me</h1>
-      <p>
-        Hi, I’m <strong>Ijeoma Ogbenna</strong>, a passionate web developer and designer 
-        with a focus on creating modern, user-friendly, and visually appealing digital experiences. 
-        I specialize in building responsive websites and web applications that blend clean aesthetics 
-        with functional design.
-      </p>
-      <p>
-        My journey in tech has been fueled by curiosity and creativity, allowing me to work on diverse 
-        projects ranging from personal portfolios to full featured applications. I enjoy solving problems, 
-        learning new technologies, and bringing ideas to life through code.
-      </p>
-      <p>
-        Beyond coding, I’m driven by a love for design, minimalism, and innovation  always aiming to 
-        deliver solutions that are both practical and impactful.
-      </p>
-      <p>
-        Let’s connect! You can find me on 
-        <a href="https://www.linkedin.com/in/ijeoma-ogbenna-a20771358/" target="_blank">LinkedIn</a> 
-        or explore my work on my 
-        <a href="https://codebyoma01.github.io/my-portfolio/" target="_blank">Portfolio</a>.
-      </p>
-    </section>
-  </main>
-
-
-  <footer class="footer">
-    <div class="container">
-      <p>&copy; 2025 Ijeoma Ogbenna. All rights reserved.</p>
+  <!-- About Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <div class="hero-inner">
+        <!-- Profile Picture -->
+        <div class="hero-image">
+          <img src="images/ijeoma.jpg" alt="Ijeoma Ogbenna">
+        </div>
+        <!-- About Text -->
+        <div class="hero-text">
+          <h1>About <span class="highlight">Me</span></h1>
+          <p class="about-text">
+            I'm <strong>Ijeoma Ogbenna</strong>, a passionate Frontend Developer and UI/UX Designer dedicated to building clean, modern, and intuitive digital experiences. I love crafting interfaces that are not only visually appealing but also effortless for users to navigate.
+          </p>
+          <p class="about-text">
+            My toolkit includes <strong>HTML, CSS, JavaScript, React, Django, Figma</strong>, and other tools I use to bring ideas to life. Every design I create is carefully thought out to solve problems and provide meaningful experiences.
+          </p>
+          <p class="about-text">
+            UI/UX design is more than aesthetics it's about empathy, clarity, and creating interactions that feel natural. I aim to merge design thinking with code to deliver websites that are functional, accessible, and beautiful.
+          </p>
+          <div class="hero-buttons">
+            <a href="portfolio.html" class="btn primary">View My Work</a>
+            <a href="contact.html" class="btn secondary">Get In Touch</a>
+          </div>
+        </div>
+      </div>
     </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section class="skills">
+    <div class="container">
+      <h2 class="section-title">My <span class="highlight">Skills</span></h2>
+      <p class="section-subtitle">Technologies and tools I use to craft modern and responsive web experiences.</p>
+      <div class="skills-grid">
+        <div class="skill-card"><i class="fab fa-html5"></i><h3>HTML5</h3></div>
+        <div class="skill-card"><i class="fab fa-css3-alt"></i><h3>CSS3</h3></div>
+        <div class="skill-card"><i class="fab fa-js-square"></i><h3>JavaScript</h3></div>
+        <div class="skill-card"><i class="fab fa-python"></i><h3>Django</h3></div>
+        <div class="skill-card"><i class="fab fa-git-alt"></i><h3>Git</h3></div>
+        <div class="skill-card"><i class="fas fa-pencil-ruler"></i><h3>UI/UX Design</h3></div>
+        <div class="skill-card"><i class="fas fa-layer-group"></i><h3>Figma</h3></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 CodeByOma  Designed with 💻 & ❤️ by Ijeoma Ogbenna</p>
   </footer>
 
+  <!-- Hamburger Menu Script -->
   <script>
-    const toggleBtn = document.getElementById("theme-toggle");
-    const body = document.body;
+    const hamburger = document.querySelector('.hamburger');
+    const navLinks = document.querySelector('.nav-links');
 
-   
-    if (localStorage.getItem("theme") === "light") {
-      body.classList.add("light");
-      toggleBtn.textContent = "🌞";
-    } else {
-      toggleBtn.textContent = "🌙";
-    }
-
-    toggleBtn.addEventListener("click", () => {
-      body.classList.toggle("light");
-      if (body.classList.contains("light")) {
-        toggleBtn.textContent = "🌞";
-        localStorage.setItem("theme", "light");
-      } else {
-        toggleBtn.textContent = "🌙";
-        localStorage.setItem("theme", "dark");
-      }
-    });
-
-    const menuToggle = document.querySelector(".menu-toggle");
-    const nav = document.querySelector("nav");
-
-    menuToggle.addEventListener("click", () => {
-      nav.classList.toggle("active");
+    hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle('open');
+      hamburger.classList.toggle('toggle');
     });
   </script>
 </body>
