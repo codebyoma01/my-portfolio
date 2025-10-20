@@ -503,3 +503,27 @@ footer {
   .btn { padding: 0.7rem 1.4rem; }
   .uiux-image img { height: 160px; }
 }
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.social-links a {
+  color: #d4af37;
+  font-size: 1.5rem;
+  transition: all 0.3s ease;
+}
+
+.social-links a:hover {
+  color: #fff;
+  transform: translateY(-3px);
+}
+
+footer .social-links {
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
