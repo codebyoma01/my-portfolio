@@ -1,159 +1,407 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ijeoma Ogbenna | Portfolio</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio | CodebyOma</title>
 
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="css/style.css" />
 
-  <script src="https://kit.fontawesome.com/a2e0e6ad4d.js" crossorigin="anonymous"></script>
-
-  <link rel="stylesheet" href="css/style.css">
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script type="text/javascript">
+    (function(){
+      emailjs.init({ publicKey: "KvN6qbobSKsQqNy4O" });
+    })();
+  </script>
 </head>
 
 <body>
-  <header class="navbar">
-    <div class="logo">CodeBy<span>Oma</span></div>
-    <nav>
-      <ul class="nav-links">
-        <li><a href="index.html" class="active">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="portfolio.html">Projects</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-      <div class="hamburger">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
+
+  <div id="loader">
+    <p class="loader-tagline">Portfolio</p>
+    <div class="loader-name"><span>Code</span>byOma</div>
+    <div class="loader-bar-wrap">
+      <div class="loader-bar"></div>
+    </div>
+  </div>
+
+  <header class="active">
+    <a href="#" class="logo"><span>Code</span>byOma</a>
+    <i class="bx bx-menu" id="menu-icon"></i>
+    <nav class="navbar">
+      <a href="#home" class="active">Home</a>
+      <a href="#services">Services</a>
+      <a href="#resume">Resume</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#contact">Contact</a>
     </nav>
   </header>
 
-  <section class="hero">
-    <div class="hero-content">
-      <div class="hero-inner">
-        <div class="hero-image">
-          <img src="images/ijeoma.JPG" alt="Ijeoma Ogbenna">
+  <section class="home" id="home">
+    <div class="home-detail">
+      <h1>Ogbenna Ijeoma</h1>
+      <h2>I'm a
+        <span style="--i:1" data-text="Frontend Developer">Frontend Developer</span>
+        <span style="--i:2" data-text="Product Designer">Product Designer</span>
+        <span style="--i:3" data-text="UI Researcher">UI Researcher</span>
+        <span style="--i:4" data-text="Creative Technologist">Creative Technologist</span>
+      </h2>
+      <p>I'm a frontend and UI-focused developer with growing full-stack experience, passionate about building clean, responsive, and user-friendly web applications.</p>
+      <div class="btn-sci">
+        <a href="assets/my-cv.pdf" target="_blank" class="btn">
+          <i class="bx bx-download"></i> Download CV
+        </a>
+        <div class="sci">
+          <a href="https://github.com/codebyoma" target="_blank" rel="noopener noreferrer"><i class="bx bxl-github"></i></a>
+          <a href="https://www.linkedin.com/in/ijeoma-ogbenna-a20771358/" target="_blank" rel="noopener noreferrer"><i class="bx bxl-linkedin"></i></a>
+          <a href="https://www.behance.net/CodebyOma" target="_blank" rel="noopener noreferrer"><i class="bx bxl-behance"></i></a>
+          <a href="https://www.tiktok.com/@codebyoma" target="_blank" rel="noopener noreferrer"><i class="bx bxl-tiktok"></i></a>
         </div>
-        <div class="hero-text">
-          <h1>Hello, I'm <span class="typing highlight"></span></h1>
-          <h2 class="tagline">
-            Frontend Developer & UI/UX Designer crafting sleek, modern, and user-friendly web experiences.
-          </h2>
-          <div class="hero-buttons">
-            <a href="portfolio.html" class="btn primary">View My Work</a>
-            <a href="about.html" class="btn secondary">About Me</a>
+      </div>
+    </div>
+    <div class="home-img">
+      <div class="img-box">
+        <div class="img-item">
+          <img src="img/oma bg removed.png" alt="Oma">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="services" id="services">
+    <h2 class="heading">My <span>Services</span></h2>
+    <div class="services-container">
+      <div class="services-box">
+        <i class="bx bx-code-alt"></i>
+        <h3>Web Development</h3>
+        <p>Crafting responsive, modern websites with clean, maintainable code that works across all devices.</p>
+      </div>
+      <div class="services-box">
+        <i class="bx bx-paint"></i>
+        <h3>UI / UX Design</h3>
+        <p>Designing intuitive and engaging interfaces that provide seamless user experiences.</p>
+      </div>
+      <div class="services-box">
+        <i class="bx bx-layer"></i>
+        <h3>Product Design</h3>
+        <p>Transforming ideas into functional digital products with a focus on usability and aesthetics.</p>
+      </div>
+      <div class="services-box">
+        <i class="bx bx-image"></i>
+        <h3>Logo Design</h3>
+        <p>Creating unique and memorable logos that perfectly represent your brand identity.</p>
+      </div>
+      <div class="services-box">
+        <i class="bx bx-search-alt"></i>
+        <h3>SEO</h3>
+        <p>Optimizing websites to rank higher on search engines, driving traffic and visibility to your business.</p>
+      </div>
+      <div class="services-box">
+        <i class="bx bx-store-alt"></i>
+        <h3>E-commerce</h3>
+        <p>Building scalable online stores that are easy to manage and designed to convert visitors into customers.</p>
+      </div>
+      <div class="services-box">
+        <i class="bx bx-bullseye"></i>
+        <h3>Digital Marketing</h3>
+        <p>Developing strategies to grow your online presence, reach your target audience, and increase conversions.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="resume" id="resume">
+    <div class="resume-container">
+      <h2 class="heading">Why <span>Hire Me?</span></h2>
+      <p>I am a qualified and professional web developer with two years of experience in database administration and website design. Strong creative and analytical skills. Team player with an eye for detail.</p>
+      <div class="resume-buttons">
+        <button class="resume-btn active" data-target="experience">Experience</button>
+        <button class="resume-btn" data-target="education">Education</button>
+        <button class="resume-btn" data-target="skills">Skills</button>
+        <button class="resume-btn" data-target="about">About Me</button>
+      </div>
+    </div>
+
+    <div class="resume-box">
+      <div class="resume-detail active" id="experience">
+        <h2 class="heading">My <span>Experience</span></h2>
+        <div class="timeline">
+          <div class="timeline-item">
+            <h3>Product Designer — Marketa</h3>
+            <span class="edu-year">2025 - Present</span>
+            <p>• Database administration and website design<br>• Built the logic for a streamlined ad-serving platform that scaled<br>• Managed database and configuration of APIs</p>
+          </div>
+          <div class="timeline-item">
+            <h3>Product Designer — SafeHomes Management</h3>
+            <span class="edu-year">2025 - Present</span>
+            <p>• Product design and concept development<br>• Designed interfaces and user flows<br>• Communicated the goal and purpose of the company</p>
+          </div>
+          <div class="timeline-item">
+            <h3>Product Designer — CentariAi</h3>
+            <span class="edu-year">2025 - Present</span>
+            <p>• Database administration and website design<br>• Built the logic for a predictive supply chain<br>• Calculation and reduction of risk</p>
+          </div>
+          <div class="timeline-item">
+            <h3>Web Designer — Silk & Strands</h3>
+            <span class="edu-year">2026 - Present</span>
+            <p>
+              • Designed and developed a luxury wig brand website with a modern and elegant interface<br>
+              • Created responsive layouts for product showcases and brand storytelling<br>
+              • Focused on user-friendly navigation and visually appealing product presentation
+            </p>
           </div>
         </div>
       </div>
-    </div>
-  </section>
 
-  <section class="skills">
-    <h2 class="section-title">My <span class="highlight">Skills</span></h2>
-    <p class="section-subtitle">Technologies and tools I use to build modern web experiences.</p>
-    <div class="skills-grid">
-      <div class="skill-card"><i class="fab fa-html5"></i><h3>HTML5</h3></div>
-      <div class="skill-card"><i class="fab fa-css3-alt"></i><h3>CSS3</h3></div>
-      <div class="skill-card"><i class="fab fa-js-square"></i><h3>JavaScript</h3></div>
-      <div class="skill-card"><i class="fab fa-python"></i><h3>Django</h3></div>
-      <div class="skill-card"><i class="fab fa-git-alt"></i><h3>Git</h3></div>
-      <div class="skill-card"><i class="fas fa-pencil-ruler"></i><h3>UI/UX Design</h3></div>
-      <div class="skill-card"><i class="fas fa-layer-group"></i><h3>Figma</h3></div>
-    </div>
-  </section>
-
-  <section id="certificates" class="projects">
-    <h2 class="section-title">Certificates & <span class="highlight">Achievements</span></h2>
-    <p class="section-subtitle">A few certifications showcasing my learning journey and expertise.</p>
-
-    <div class="project-grid">
-      <div class="project-card">
-        <div class="project-image">
-          <img src="images/cert-uiux.jpg" alt="UI/UX Design Certificate">
-        </div>
-        <div class="project-content">
-          <h3>UI/UX Design Certificate</h3>
-          <p>Earned from <strong>Bizmarrow Technologies</strong>  practical training in user interface and experience design.</p>
-          <a href="images/UIUX-Bizmarrow.pdf" class="btn secondary" target="_blank">View Certificate</a>
+      <div class="resume-detail" id="education">
+        <h2 class="heading">My <span>Education</span></h2>
+        <div class="timeline">
+          <div class="timeline-item">
+            <h3>Bizmarrow Technologies</h3>
+            <span class="edu-year">2024</span>
+            <p>Relevant Courses: Web Development, UI/UX Design.</p>
+          </div>
+          <div class="timeline-item">
+            <h3>Bizmarrow Technologies</h3>
+            <span class="edu-year">2025</span>
+            <p>Python & Django Framework.</p>
+          </div>
+          <div class="timeline-item">
+            <h3>Coursera Online Courses</h3>
+            <span class="edu-year">2025</span>
+            <p>Full Stack Development</p>
+          </div>
         </div>
       </div>
 
-      <div class="project-card">
-        <div class="project-image">
-          <img src="images/cert-django.jpg" alt="Full Stack Certificate">
-        </div>
-        <div class="project-content">
-          <h3>Full Stack Development Certificate</h3>
-          <p>Completed <strong>Bizmarrow Technologies</strong> full stack web development program using HTML, CSS, JS & Django.</p>
-          <a href="images/FullStack-Bizmarrow.pdf" class="btn secondary" target="_blank">View Certificate</a>
+      <div class="resume-detail" id="skills">
+        <h2 class="heading">My <span>Skills</span></h2>
+        <div class="skills-badge-grid">
+          <div class="skill-group-badge">
+            <h3 class="skill-group-title">Design & Frontend</h3>
+            <div class="skill-list-badge">
+              <div class="skill-item-badge"><span>HTML</span><span class="sbadge sbadge-exp">Experienced</span></div>
+              <div class="skill-item-badge"><span>CSS</span><span class="sbadge sbadge-exp">Experienced</span></div>
+              <div class="skill-item-badge"><span>JavaScript</span><span class="sbadge sbadge-int">Intermediate</span></div>
+              <div class="skill-item-badge"><span>UI/UX Design</span><span class="sbadge sbadge-exp">Experienced</span></div>
+              <div class="skill-item-badge"><span>Figma</span><span class="sbadge sbadge-exp">Experienced</span></div>
+              <div class="skill-item-badge"><span>React</span><span class="sbadge sbadge-bas">Basic</span></div>
+            </div>
+          </div>
+          <div class="skill-group-badge">
+            <h3 class="skill-group-title">Other Tools</h3>
+            <div class="skill-list-badge">
+              <div class="skill-item-badge"><span>Python / Django</span><span class="sbadge sbadge-bas">Basic</span></div>
+              <div class="skill-item-badge"><span>Git & GitHub</span><span class="sbadge sbadge-int">Intermediate</span></div>
+              <div class="skill-item-badge"><span>SEO</span><span class="sbadge sbadge-int">Intermediate</span></div>
+              <div class="skill-item-badge"><span>Product Design</span><span class="sbadge sbadge-exp">Experienced</span></div>
+            </div>
+          </div>
         </div>
       </div>
 
-      <div class="project-card">
-        <div class="project-image">
-          <img src="images/IMG_6186.jpg" alt="Coursera Certificate">
+      <div class="resume-detail" id="about">
+        <h2 class="heading">About <span>Me</span></h2>
+        <div class="about-box">
+          <p>I am a motivated and creative frontend and UI-focused developer who enjoys building clean, responsive, and user-friendly web applications. I pay close attention to detail and focus on creating experiences that are both functional and visually appealing.</p>
+          <ul class="resume-list">
+            <li><span>Name:</span> Ogbenna Ijeoma</li>
+            <li><span>Gender:</span> Female</li>
+            <li><span>Employment:</span> Full-time / Freelance</li>
+            <li><span>Language:</span> English</li>
+            <li><span>Email:</span> CodebyOma@gmail.com</li>
+            <li><span>Location:</span> Abuja, Nigeria</li>
+          </ul>
         </div>
-        <div class="project-content">
-          <h3>HTML, CSS & JavaScript (Meta)</h3>
-          <p>Completed Coursera’s “Introduction to HTML, CSS, and JavaScript” by Meta.</p>
-          <a href="images/Coursera-certificate.pdf" class="btn secondary" target="_blank">View Certificate</a>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="Portfolio" id="portfolio">
+    <h2 class="heading">Latest <span>Project</span></h2>
+    <div class="Portfolio-container">
+      <div class="Portfolio-box">
+
+        <div class="Portfolio-detail active">
+          <p class="numb">01</p>
+          <h3>UI/UX Website</h3>
+          <p>A clean and intuitive UI/UX design for RealEstate, focused on improving usability, user flow, and visual hierarchy across their web platform.</p>
+          <div class="tech"><p>Figma</p></div>
+          <div class="live-github">
+            <a href="https://www.figma.com/proto/WLIXTE7VCQYFKrmSFbXEfG/SAFEHOME?node-id=1380-8610&t=RapCihrZ12Qw3OJR-1&scaling=scale-down&content-scaling=fixed&page-id=1223%3A3192&starting-point-node-id=1380%3A8610" target="_blank"><i class='bx bx-link-external'></i><span>Live Project</span></a>
+          </div>
+        </div>
+
+        <div class="Portfolio-detail">
+          <p class="numb">02</p>
+          <h3>Restaurant Website</h3>
+          <p>A fully responsive multi-page restaurant website built from scratch, featuring a dynamic menu, interactive ordering section, and a working contact form. Designed with modern UI and optimised for all devices.</p>
+          <div class="tech"><p>HTML, CSS, JavaScript</p></div>
+          <div class="live-github">
+            <a href="https://codebyoma01.github.io/loveberry/" target="_blank"><i class='bx bx-link-external'></i><span>Live Project</span></a>
+            <a href="https://github.com/codebyoma01/loveberry.git" target="_blank"><i class='bx bxl-github'></i><span>Github</span></a>
+          </div>
+        </div>
+
+        <div class="Portfolio-detail">
+          <p class="numb">03</p>
+          <h3>UI/UX Mobile App Design</h3>
+          <p>A clean mobile app UI focused on usability, spacing, and smooth user flow.</p>
+          <div class="tech"><p>Figma</p></div>
+          <div class="live-github">
+            <a href="https://www.figma.com/proto/iJjlcBVgwDPFABBV9wqkwz/Marketa-Project?node-id=1059-2827&t=1PKeFTY5CPFS0qWp-1&scaling=scale-down&content-scaling=fixed&page-id=366%3A921&starting-point-node-id=1059%3A2827" target="_blank"><i class='bx bx-link-external'></i><span>View Design</span></a>
+          </div>
+        </div>
+
+        <div class="Portfolio-detail">
+          <p class="numb">04</p>
+          <h3>UI/UX Website Redesign</h3>
+          <p>Website redesign aimed at improving visual hierarchy, readability, and overall user experience.</p>
+          <div class="tech"><p>Figma</p></div>
+          <div class="live-github">
+            <a href="https://www.figma.com/proto/yO2OSRSqFoopMl8JBtFyZt/coffee-App?page-id=0%3A1&node-id=1-3&viewport=780%2C674%2C0.32&t=ZOeszqRNewrhTx4H-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=1%3A3" target="_blank"><i class='bx bx-link-external'></i><span>View Design</span></a>
+          </div>
+        </div>
+
+        <div class="Portfolio-detail">
+          <p class="numb">05</p>
+          <h3>Dashboard UI Design</h3>
+          <p>A dashboard interface designed with a focus on clarity, data visualisation, and modern layout.</p>
+          <div class="tech"><p>Figma, UI Design</p></div>
+          <div class="live-github">
+            <a href="https://www.figma.com/proto/UgDM584TF2bYHaj94xBDVY/CentariAI?node-id=111-29&t=xzaxLJCSUsChLlct-0&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1%3A3" target="_blank"><i class='bx bx-link-external'></i><span>View Design</span></a>
+          </div>
+        </div>
+
+        <div class="Portfolio-detail">
+          <p class="numb">06</p>
+          <h3>Silks &amp; Strands</h3>
+          <p>A modern, fully responsive e-commerce website for a hair and beauty brand. Features product listings, smooth navigation, and a clean aesthetic designed to convert visitors into customers.</p>
+          <div class="tech"><p>HTML, CSS, JavaScript</p></div>
+          <div class="live-github">
+            <a href="https://silkstrands.netlify.app/" target="_blank"><i class='bx bx-link-external'></i><span>Live Project</span></a>
+          </div>
+        </div>
+
+        <div class="Portfolio-detail">
+          <p class="numb">07</p>
+          <h3>Nydra</h3>
+          <p>A sleek and modern website built for Nydra, showcasing a clean layout, engaging visuals, and smooth user experience across all devices.</p>
+          <div class="tech"><p>HTML, CSS, JavaScript</p></div>
+          <div class="live-github">
+            <a href="https://nydra-site.netlify.app/" target="_blank"><i class='bx bx-link-external'></i><span>Live Project</span></a>
+          </div>
+        </div>
+
+        <div class="Portfolio-detail">
+          <p class="numb">08</p>
+          <h3>Jewelry eCommerce UI/UX Design</h3>
+          <p>A modern jewelry eCommerce interface designed with elegant product displays, intuitive navigation, and a seamless shopping experience for users.</p>
+          
+          <div class="tech">
+            <p>Figma, UI/UX Design, Prototyping</p>
+          </div>
+        
+          <div class="live-github">
+            <a href="#" target="_blank">
+              <i class='bx bx-link-external'></i>
+              <span>View Design</span>
+            </a>
+          </div>
+        </div>
+
+        <<div class="Portfolio-detail">
+          <p class="numb">09</p>
+          <h3>Fashion eCommerce Website</h3>
+          <p>A stylish and responsive fashion eCommerce website built with HTML, CSS, and JavaScript, featuring product galleries, smooth interactions, and a modern shopping experience.</p>
+          
+          <div class="tech">
+            <p>HTML, CSS, JavaScript, Responsive Design</p>
+          </div>
+        
+          <div class="live-github">
+            <a href="https://github.com/yourusername/fashion-website" target="_blank">
+              <i class='bx bx-code-alt'></i>
+              <span>View Code</span>
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="Portfolio-carousel">
+        <div class="img-slide-wrapper">
+          <div class="img-item"><img src="img/portfolio1.PNG" alt="Project 1"></div>
+          <div class="img-item"><img src="img/portfolio2.PNG" alt="Project 2"></div>
+          <div class="img-item"><img src="img/portfolio3.png" alt="Project 3"></div>
+          <div class="img-item"><img src="img/portfolio4.PNG" alt="Project 4"></div>
+          <div class="img-item"><img src="img/portfolio5.PNG" alt="Project 5"></div>
+          <div class="img-item"><img src="img/silkstrands-preview.png" alt="Silks &amp; Strands"></div>
+          <div class="img-item"><img src="img/nydra-preview.png" alt="Nydra"></div>
+          <div class="img-item"><img src="img/portfolio8.PNG" alt="Project 1"></div>
+          <div class="img-item"><img src="img/portfolio9.PNG" alt="Project 1"></div>
+        </div>
+        <div class="navigation">
+          <button class="arrow-left"><i class='bx bx-chevron-left'></i></button>
+          <button class="arrow-right"><i class='bx bx-chevron-right'></i></button>
         </div>
       </div>
     </div>
   </section>
 
-  <footer>
-    <p>© 2025 CodeByOma | Designed with 💻 & ❤️ by Ijeoma Ogbenna</p>
-  </footer>
+  <section class="contact" id="contact">
+    <div class="contact-container">
+      <div class="contact-box">
+        <h2>Let's Work Together</h2>
+        <p class="desc">Feel free to reach out for collaborations, questions, or freelance opportunities.</p>
+        <div class="contact-detail">
+          <i class='bx bxs-phone'></i>
+          <div class="detail"><p>Phone</p><p>(+234 905 939 8498)</p></div>
+        </div>
+        <div class="contact-detail">
+          <i class='bx bxs-envelope'></i>
+          <div class="detail"><p>Email</p><p>CodebyOma@gmail.com</p></div>
+        </div>
+        <div class="contact-detail">
+          <i class='bx bxs-map'></i>
+          <div class="detail"><p>Location</p><p>Abuja, Nigeria</p></div>
+        </div>
+      </div>
 
-  <script>
-    const phrases = ["Ijeoma Ogbenna", "Frontend Developer", "UI/UX Designer"];
-    const typingSpan = document.querySelector(".typing");
-    let i = 0, j = 0, currentPhrase = [], isDeleting = false;
+      <form id="contact-form">
+        <h2 class="heading">Contact <span>Me!</span></h2>
+        <div class="field-box">
+          <input type="text" name="from_name" placeholder="Full Name" required>
+          <input type="email" name="from_email" placeholder="Email Address" required>
+          <input type="text" name="phone" placeholder="Phone Number">
+          <input type="text" name="subject" placeholder="Email Subject">
+          <textarea name="message" placeholder="Your Message" required></textarea>
+        </div>
+        <button type="submit" class="btn">Send Message</button>
+        <div id="form-message" class="form-message"></div>
+      </form>
+    </div>
 
-    function loop() {
-      const current = phrases[i];
-      const speed = isDeleting ? 80 : 120;
+    <footer class="footer">
+      <div class="footer-wrapper">
+        <div class="footer-brand">
+          <h2>Code<span>byOma</span></h2>
+          <p>Crafting clean, responsive, and user-focused digital experiences.</p>
+        </div>
+        <div class="footer-socials">
+          <a href="https://github.com/codebyoma" target="_blank"><i class="bx bxl-github"></i></a>
+          <a href="https://www.linkedin.com/in/ijeoma-ogbenna-a20771358/" target="_blank"><i class="bx bxl-linkedin"></i></a>
+          <a href="https://www.behance.net/CodebyOma" target="_blank"><i class="bx bxl-behance"></i></a>
+          <a href="https://www.tiktok.com/@codebyoma" target="_blank"><i class="bx bxl-tiktok"></i></a>
+        </div>
+        <div class="footer-bottom">
+          &copy; 2026 CodebyOma &mdash; Designed &amp; Built by Ogbenna Ijeoma
+        </div>
+      </div>
+    </footer>
+  </section>
 
-      if (!isDeleting && j < current.length) {
-        currentPhrase.push(current[j]);
-        j++;
-        typingSpan.textContent = currentPhrase.join("");
-      }
-
-      if (isDeleting && j > 0) {
-        currentPhrase.pop();
-        j--;
-        typingSpan.textContent = currentPhrase.join("");
-      }
-
-      if (!isDeleting && j === current.length) {
-        isDeleting = true;
-        setTimeout(loop, 1000);
-        return;
-      }
-
-      if (isDeleting && j === 0) {
-        isDeleting = false;
-        i = (i + 1) % phrases.length;
-      }
-
-      setTimeout(loop, speed);
-    }
-
-    window.onload = loop;
-  </script>
-
-  <script>
-    const hamburger = document.querySelector('.hamburger');
-    const navLinks = document.querySelector('.nav-links');
-
-    hamburger.addEventListener('click', () => {
-      navLinks.classList.toggle('open');
-      hamburger.classList.toggle('toggle');
-    });
-  </script>
+  <script src="js/script.js"></script>
 </body>
 </html>
