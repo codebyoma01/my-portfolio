@@ -4,379 +4,399 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Portfolio | CodebyOma</title>
-
-  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet"/>
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/style.css" />
-
-  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-  <script type="text/javascript">
-    (function(){
-      emailjs.init({ publicKey: "KvN6qbobSKsQqNy4O" });
-    })();
-  </script>
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script>(function(){ emailjs.init({ publicKey: "KvN6qbobSKsQqNy4O" }); })();</script>
 </head>
-
 <body>
 
+  <!-- LOADER -->
   <div id="loader">
     <p class="loader-tagline">Portfolio</p>
     <div class="loader-name"><span>Code</span>byOma</div>
-    <div class="loader-bar-wrap">
-      <div class="loader-bar"></div>
-    </div>
+    <div class="loader-bar-wrap"><div class="loader-bar"></div></div>
   </div>
 
-  <header class="active">
-    <a href="#" class="logo"><span>Code</span>byOma</a>
+  <!-- CUSTOM CURSOR -->
+  <div class="cursor-dot"></div>
+  <div class="cursor-ring"></div>
+
+  <!-- HEADER -->
+  <header id="header">
+    <a href="#home" class="logo"><span>Code</span>byOma</a>
     <i class="bx bx-menu" id="menu-icon"></i>
     <nav class="navbar">
       <a href="#home" class="active">Home</a>
       <a href="#services">Services</a>
-      <a href="#resume">Resume</a>
+      <a href="about.html">About</a>
       <a href="#portfolio">Portfolio</a>
       <a href="#contact">Contact</a>
     </nav>
   </header>
 
+  <!-- HOME -->
   <section class="home" id="home">
     <div class="home-detail">
-      <h1>Ogbenna Ijeoma</h1>
-      <h2>I'm a
-        <span style="--i:1" data-text="Frontend Developer">Frontend Developer</span>
-        <span style="--i:2" data-text="Product Designer">Product Designer</span>
-        <span style="--i:3" data-text="UI Researcher">UI Researcher</span>
-        <span style="--i:4" data-text="Creative Technologist">Creative Technologist</span>
-      </h2>
-      <p>I'm a frontend and UI-focused developer with growing full-stack experience, passionate about building clean, responsive, and user-friendly web applications.</p>
+      <p class="home-eyebrow"><span class="pulse-dot"></span>Available for new projects</p>
+      <h1>Ogbenna<br /><em>Ijeoma</em></h1>
+      <div class="home-roles">
+        <span>Frontend Developer</span>
+        <span>Product Designer</span>
+        <span>UI Researcher</span>
+        <span>Creative Technologist</span>
+      </div>
+      <p class="home-bio">
+        Frontend Developer &amp; UI Designer focused on building responsive,
+        user-friendly web applications that solve real business problems. I
+        combine design thinking with clean code to create engaging digital experiences.
+      </p>
       <div class="btn-sci">
         <a href="assets/my-cv.pdf" target="_blank" class="btn">
-          <i class="bx bx-download"></i> Download CV
+          <i class="bx bx-download"></i> Download Resume
         </a>
         <div class="sci">
-          <a href="https://github.com/codebyoma" target="_blank" rel="noopener noreferrer"><i class="bx bxl-github"></i></a>
-          <a href="https://www.linkedin.com/in/ijeoma-ogbenna-a20771358/" target="_blank" rel="noopener noreferrer"><i class="bx bxl-linkedin"></i></a>
-          <a href="https://www.behance.net/CodebyOma" target="_blank" rel="noopener noreferrer"><i class="bx bxl-behance"></i></a>
-          <a href="https://www.tiktok.com/@codebyoma" target="_blank" rel="noopener noreferrer"><i class="bx bxl-tiktok"></i></a>
+          <a href="https://github.com/codebyoma" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="bx bxl-github"></i></a>
+          <a href="https://www.linkedin.com/in/ijeoma-ogbenna-a20771358/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="bx bxl-linkedin"></i></a>
+          <a href="https://www.behance.net/CodebyOma" target="_blank" rel="noopener noreferrer" aria-label="Behance"><i class="bx bxl-behance"></i></a>
+          <a href="https://www.tiktok.com/@codebyoma" target="_blank" rel="noopener noreferrer" aria-label="TikTok"><i class="bx bxl-tiktok"></i></a>
         </div>
       </div>
     </div>
     <div class="home-img">
       <div class="img-box">
-        <div class="img-item">
-          <img src="img/oma bg removed.png" alt="Oma">
-        </div>
+        <img src="img/oma bg removed.png" alt="Ogbenna Ijeoma" />
       </div>
     </div>
   </section>
 
+  <!-- SERVICES -->
   <section class="services" id="services">
+    <div class="section-label">What I do</div>
     <h2 class="heading">My <span>Services</span></h2>
     <div class="services-container">
-      <div class="services-box">
+      <div class="services-box reveal-item">
+        <div class="services-num">01</div>
         <i class="bx bx-code-alt"></i>
         <h3>Web Development</h3>
         <p>Crafting responsive, modern websites with clean, maintainable code that works across all devices.</p>
       </div>
-      <div class="services-box">
+      <div class="services-box reveal-item">
+        <div class="services-num">02</div>
         <i class="bx bx-paint"></i>
         <h3>UI / UX Design</h3>
         <p>Designing intuitive and engaging interfaces that provide seamless user experiences.</p>
       </div>
-      <div class="services-box">
+      <div class="services-box reveal-item">
+        <div class="services-num">03</div>
         <i class="bx bx-layer"></i>
         <h3>Product Design</h3>
         <p>Transforming ideas into functional digital products with a focus on usability and aesthetics.</p>
       </div>
-      <div class="services-box">
-        <i class="bx bx-image"></i>
-        <h3>Logo Design</h3>
-        <p>Creating unique and memorable logos that perfectly represent your brand identity.</p>
+    </div>
+  </section>
+
+  <!-- ABOUT (index preview only) -->
+  <section class="about-section" id="resume">
+    <div class="ab-row">
+      <div class="ab-left reveal-item">
+        <div class="ab-label">About</div>
+        <h2 class="ab-title">About me</h2>
+        <p class="ab-desc">I'm Ijeoma (known as CodebyOma), a self taught Frontend Developer &amp; UI Designer based in Nigeria. My design foundation shapes how I build clean, usable products. I'm a passionate builder who loves solving real problems with focus, detail, and on-time execution.</p>
+        <div class="ab-tags">
+          <span>HTML/CSS</span>
+          <span>JavaScript</span>
+          <span>Figma</span>
+          <span>UI Design</span>
+          <span>Freelance</span>
+        </div>
+        <div class="ab-actions">
+          <a href="about.html" class="ab-btn">Read more <i class="bx bx-right-arrow-alt"></i></a>
+        </div>
       </div>
-      <div class="services-box">
-        <i class="bx bx-search-alt"></i>
-        <h3>SEO</h3>
-        <p>Optimizing websites to rank higher on search engines, driving traffic and visibility to your business.</p>
-      </div>
-      <div class="services-box">
-        <i class="bx bx-store-alt"></i>
-        <h3>E-commerce</h3>
-        <p>Building scalable online stores that are easy to manage and designed to convert visitors into customers.</p>
-      </div>
-      <div class="services-box">
-        <i class="bx bx-bullseye"></i>
-        <h3>Digital Marketing</h3>
-        <p>Developing strategies to grow your online presence, reach your target audience, and increase conversions.</p>
+
+      <div class="ab-right reveal-item">
+        <div class="ab-card">
+          <div class="ab-card-top">
+            <span class="ab-card-label">UI / UX DESIGN</span>
+            <div class="ab-card-icons">
+              <span class="ab-icon"><i class="bx bx-palette"></i></span>
+              <span class="ab-icon"><i class="bx bx-pen"></i></span>
+            </div>
+          </div>
+          <h3 class="ab-card-title">Design &amp; Prototype</h3>
+          <div class="ab-card-cols">
+            <div class="ab-sub-card">
+              <p class="ab-sub-label">WIREFRAMING</p>
+              <p>I craft intuitive layouts and user flows that feel natural and reduce friction at every step.</p>
+            </div>
+            <div class="ab-sub-card">
+              <p class="ab-sub-label">VISUAL DESIGN</p>
+              <p>I create polished, on-brand interfaces in Figma from components to full high-fidelity prototypes.</p>
+            </div>
+          </div>
+        </div>
+        <div class="ab-card">
+          <div class="ab-card-top">
+            <span class="ab-card-label">WEB DEVELOPMENT</span>
+            <div class="ab-card-icons">
+              <span class="ab-icon"><i class="bx bx-code-alt"></i></span>
+            </div>
+          </div>
+          <h3 class="ab-card-title">Build &amp; Ship</h3>
+          <p class="ab-card-body">I create responsive, performant websites from scratch clean landing pages to multi-page web apps built with HTML, CSS, and JavaScript.</p>
+          <p class="ab-card-list-item"><span class="ab-dot"></span> Landing pages · Web apps · Portfolio sites</p>
+        </div>
       </div>
     </div>
   </section>
 
-  <section class="resume" id="resume">
-    <div class="resume-container">
-      <h2 class="heading">Why <span>Hire Me?</span></h2>
-      <p>I am a qualified and professional web developer with two years of experience in database administration and website design. Strong creative and analytical skills. Team player with an eye for detail.</p>
-      <div class="resume-buttons">
-        <button class="resume-btn active" data-target="experience">Experience</button>
-        <button class="resume-btn" data-target="education">Education</button>
-        <button class="resume-btn" data-target="skills">Skills</button>
-        <button class="resume-btn" data-target="about">About Me</button>
-      </div>
-    </div>
-
-    <div class="resume-box">
-      <div class="resume-detail active" id="experience">
-        <h2 class="heading">My <span>Experience</span></h2>
-        <div class="timeline">
-          <div class="timeline-item">
-            <h3>Product Designer — Marketa</h3>
-            <span class="edu-year">2025 - Present</span>
-            <p>• Database administration and website design<br>• Built the logic for a streamlined ad-serving platform that scaled<br>• Managed database and configuration of APIs</p>
-          </div>
-          <div class="timeline-item">
-            <h3>Product Designer — SafeHomes Management</h3>
-            <span class="edu-year">2025 - Present</span>
-            <p>• Product design and concept development<br>• Designed interfaces and user flows<br>• Communicated the goal and purpose of the company</p>
-          </div>
-          <div class="timeline-item">
-            <h3>Product Designer — CentariAi</h3>
-            <span class="edu-year">2025 - Present</span>
-            <p>• Database administration and website design<br>• Built the logic for a predictive supply chain<br>• Calculation and reduction of risk</p>
-          </div>
-          <div class="timeline-item">
-            <h3>Web Designer — Silk & Strands</h3>
-            <span class="edu-year">2026 - Present</span>
-            <p>
-              • Designed and developed a luxury wig brand website with a modern and elegant interface<br>
-              • Created responsive layouts for product showcases and brand storytelling<br>
-              • Focused on user-friendly navigation and visually appealing product presentation
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <div class="resume-detail" id="education">
-        <h2 class="heading">My <span>Education</span></h2>
-        <div class="timeline">
-          <div class="timeline-item">
-            <h3>Bizmarrow Technologies</h3>
-            <span class="edu-year">2024</span>
-            <p>Relevant Courses: Web Development, UI/UX Design.</p>
-          </div>
-          <div class="timeline-item">
-            <h3>Bizmarrow Technologies</h3>
-            <span class="edu-year">2025</span>
-            <p>Python & Django Framework.</p>
-          </div>
-          <div class="timeline-item">
-            <h3>Coursera Online Courses</h3>
-            <span class="edu-year">2025</span>
-            <p>Full Stack Development</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="resume-detail" id="skills">
-        <h2 class="heading">My <span>Skills</span></h2>
-        <div class="skills-badge-grid">
-          <div class="skill-group-badge">
-            <h3 class="skill-group-title">Design & Frontend</h3>
-            <div class="skill-list-badge">
-              <div class="skill-item-badge"><span>HTML</span><span class="sbadge sbadge-exp">Experienced</span></div>
-              <div class="skill-item-badge"><span>CSS</span><span class="sbadge sbadge-exp">Experienced</span></div>
-              <div class="skill-item-badge"><span>JavaScript</span><span class="sbadge sbadge-int">Intermediate</span></div>
-              <div class="skill-item-badge"><span>UI/UX Design</span><span class="sbadge sbadge-exp">Experienced</span></div>
-              <div class="skill-item-badge"><span>Figma</span><span class="sbadge sbadge-exp">Experienced</span></div>
-              <div class="skill-item-badge"><span>React</span><span class="sbadge sbadge-bas">Basic</span></div>
-            </div>
-          </div>
-          <div class="skill-group-badge">
-            <h3 class="skill-group-title">Other Tools</h3>
-            <div class="skill-list-badge">
-              <div class="skill-item-badge"><span>Python / Django</span><span class="sbadge sbadge-bas">Basic</span></div>
-              <div class="skill-item-badge"><span>Git & GitHub</span><span class="sbadge sbadge-int">Intermediate</span></div>
-              <div class="skill-item-badge"><span>SEO</span><span class="sbadge sbadge-int">Intermediate</span></div>
-              <div class="skill-item-badge"><span>Product Design</span><span class="sbadge sbadge-exp">Experienced</span></div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="resume-detail" id="about">
-        <h2 class="heading">About <span>Me</span></h2>
-        <div class="about-box">
-          <p>I am a motivated and creative frontend and UI-focused developer who enjoys building clean, responsive, and user-friendly web applications. I pay close attention to detail and focus on creating experiences that are both functional and visually appealing.</p>
-          <ul class="resume-list">
-            <li><span>Name:</span> Ogbenna Ijeoma</li>
-            <li><span>Gender:</span> Female</li>
-            <li><span>Employment:</span> Full-time / Freelance</li>
-            <li><span>Language:</span> English</li>
-            <li><span>Email:</span> CodebyOma@gmail.com</li>
-            <li><span>Location:</span> Abuja, Nigeria</li>
-          </ul>
-        </div>
-      </div>
-
-    </div>
-  </section>
-
+    <!-- PORTFOLIO -->
   <section class="Portfolio" id="portfolio">
-    <h2 class="heading">Latest <span>Project</span></h2>
-    <div class="Portfolio-container">
-      <div class="Portfolio-box">
+    <div class="portfolio-header">
+      <div class="section-label">Portfolio</div>
+      <h2 class="portfolio-title">Selected work</h2>
+      <p class="portfolio-sub">Public launches and case studies. Some recent projects are under NDA and can't be shared.</p>
+      <div class="portfolio-filter-row">
+        <span class="portfolio-filter-label">Public releases</span>
+      </div>
+    </div>
 
-        <div class="Portfolio-detail active">
-          <p class="numb">01</p>
-          <h3>UI/UX Website</h3>
-          <p>A clean and intuitive UI/UX design for RealEstate, focused on improving usability, user flow, and visual hierarchy across their web platform.</p>
-          <div class="tech"><p>Figma</p></div>
-          <div class="live-github">
-            <a href="https://www.figma.com/proto/WLIXTE7VCQYFKrmSFbXEfG/SAFEHOME?node-id=1380-8610&t=RapCihrZ12Qw3OJR-1&scaling=scale-down&content-scaling=fixed&page-id=1223%3A3192&starting-point-node-id=1380%3A8610" target="_blank"><i class='bx bx-link-external'></i><span>Live Project</span></a>
+    <div class="portfolio-grid">
+
+      <!-- Card 1 -->
+      <div class="pcard reveal-item">
+        <div class="pcard-img">
+          <img src="img/portfolio1.PNG" alt="SafeHome UI/UX" loading="lazy" />
+          <span class="pcard-badge">UI/UX DESIGN</span>
+          <span class="pcard-selected">SELECTED</span>
+        </div>
+        <div class="pcard-body">
+          <h3>SafeHome</h3>
+          <p>A clean and intuitive UI/UX design for a Real Estate platform, focused on improving usability, user flow, and visual hierarchy.</p>
+          <div class="pcard-tags">
+            <span>REAL ESTATE</span>
+            <span>USER RESEARCH</span>
+            <span>FIGMA</span>
+          </div>
+          <div class="pcard-actions">
+            <a href="https://www.figma.com/proto/WLIXTE7VCQYFKrmSFbXEfG/SAFEHOME?node-id=1380-8610&t=RapCihrZ12Qw3OJR-1" target="_blank" class="pcard-btn pcard-btn-outline">View demo</a>
+            <a href="https://www.figma.com/proto/WLIXTE7VCQYFKrmSFbXEfG/SAFEHOME?node-id=1380-8610&t=RapCihrZ12Qw3OJR-1" target="_blank" class="pcard-btn pcard-btn-dark">Case study</a>
           </div>
         </div>
+      </div>
 
-        <div class="Portfolio-detail">
-          <p class="numb">02</p>
-          <h3>Restaurant Website</h3>
-          <p>A fully responsive multi-page restaurant website built from scratch, featuring a dynamic menu, interactive ordering section, and a working contact form. Designed with modern UI and optimised for all devices.</p>
-          <div class="tech"><p>HTML, CSS, JavaScript</p></div>
-          <div class="live-github">
-            <a href="https://codebyoma01.github.io/loveberry/" target="_blank"><i class='bx bx-link-external'></i><span>Live Project</span></a>
-            <a href="https://github.com/codebyoma01/loveberry.git" target="_blank"><i class='bx bxl-github'></i><span>Github</span></a>
+      <!-- Card 2 -->
+      <div class="pcard reveal-item">
+        <div class="pcard-img">
+          <img src="img/portfolio2.PNG" alt="Loveberry Restaurant" loading="lazy" />
+          <span class="pcard-badge">WEB</span>
+          <span class="pcard-selected">SELECTED</span>
+        </div>
+        <div class="pcard-body">
+          <h3>Loveberry Restaurant</h3>
+          <p>A fully responsive multi-page restaurant website with dynamic menu, interactive ordering section, and a working contact form.</p>
+          <div class="pcard-tags">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JAVASCRIPT</span>
+          </div>
+          <div class="pcard-actions">
+            <a href="https://codebyoma01.github.io/loveberry/" target="_blank" class="pcard-btn pcard-btn-outline">View demo</a>
+            <a href="https://github.com/codebyoma01/loveberry.git" target="_blank" class="pcard-btn pcard-btn-dark">GitHub</a>
           </div>
         </div>
+      </div>
 
-        <div class="Portfolio-detail">
-          <p class="numb">03</p>
-          <h3>UI/UX Mobile App Design</h3>
-          <p>A clean mobile app UI focused on usability, spacing, and smooth user flow.</p>
-          <div class="tech"><p>Figma</p></div>
-          <div class="live-github">
-            <a href="https://www.figma.com/proto/iJjlcBVgwDPFABBV9wqkwz/Marketa-Project?node-id=1059-2827&t=1PKeFTY5CPFS0qWp-1&scaling=scale-down&content-scaling=fixed&page-id=366%3A921&starting-point-node-id=1059%3A2827" target="_blank"><i class='bx bx-link-external'></i><span>View Design</span></a>
+      <!-- Card 3 -->
+      <div class="pcard reveal-item">
+        <div class="pcard-img">
+          <img src="img/portfolio3.png" alt="Marketa Mobile App" loading="lazy" />
+          <span class="pcard-badge">MOBILE APP</span>
+          <span class="pcard-selected">SELECTED</span>
+        </div>
+        <div class="pcard-body">
+          <h3>Marketa</h3>
+          <p>A clean mobile app UI focused on usability, spacing, and smooth user flow for a marketplace platform.</p>
+          <div class="pcard-tags">
+            <span>MOBILE</span>
+            <span>UI DESIGN</span>
+            <span>FIGMA</span>
+          </div>
+          <div class="pcard-actions">
+            <a href="https://www.figma.com/proto/iJjlcBVgwDPFABBV9wqkwz/Marketa-Project?node-id=1059-2827" target="_blank" class="pcard-btn pcard-btn-outline">View demo</a>
+            <a href="https://www.figma.com/proto/iJjlcBVgwDPFABBV9wqkwz/Marketa-Project?node-id=1059-2827" target="_blank" class="pcard-btn pcard-btn-dark">Case study</a>
           </div>
         </div>
+      </div>
 
-        <div class="Portfolio-detail">
-          <p class="numb">04</p>
-          <h3>UI/UX Website Redesign</h3>
-          <p>Website redesign aimed at improving visual hierarchy, readability, and overall user experience.</p>
-          <div class="tech"><p>Figma</p></div>
-          <div class="live-github">
-            <a href="https://www.figma.com/proto/yO2OSRSqFoopMl8JBtFyZt/coffee-App?page-id=0%3A1&node-id=1-3&viewport=780%2C674%2C0.32&t=ZOeszqRNewrhTx4H-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=1%3A3" target="_blank"><i class='bx bx-link-external'></i><span>View Design</span></a>
+      <!-- Card 4 -->
+      <div class="pcard reveal-item">
+        <div class="pcard-img">
+          <img src="img/portfolio4.PNG" alt="Coffee App Redesign" loading="lazy" />
+          <span class="pcard-badge">UI/UX REDESIGN</span>
+          <span class="pcard-selected">SELECTED</span>
+        </div>
+        <div class="pcard-body">
+          <h3>Coffee App Redesign</h3>
+          <p>Website redesign aimed at improving visual hierarchy, readability, and overall user experience for a coffee brand.</p>
+          <div class="pcard-tags">
+            <span>REDESIGN</span>
+            <span>FIGMA</span>
+            <span>PROTOTYPING</span>
+          </div>
+          <div class="pcard-actions">
+            <a href="https://www.figma.com/proto/yO2OSRSqFoopMl8JBtFyZt/coffee-App" target="_blank" class="pcard-btn pcard-btn-outline">View demo</a>
+            <a href="https://www.figma.com/proto/yO2OSRSqFoopMl8JBtFyZt/coffee-App" target="_blank" class="pcard-btn pcard-btn-dark">Case study</a>
           </div>
         </div>
+      </div>
 
-        <div class="Portfolio-detail">
-          <p class="numb">05</p>
-          <h3>Dashboard UI Design</h3>
-          <p>A dashboard interface designed with a focus on clarity, data visualisation, and modern layout.</p>
-          <div class="tech"><p>Figma, UI Design</p></div>
-          <div class="live-github">
-            <a href="https://www.figma.com/proto/UgDM584TF2bYHaj94xBDVY/CentariAI?node-id=111-29&t=xzaxLJCSUsChLlct-0&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1%3A3" target="_blank"><i class='bx bx-link-external'></i><span>View Design</span></a>
+      <!-- Card 5 -->
+      <div class="pcard reveal-item">
+        <div class="pcard-img">
+          <img src="img/portfolio5.PNG" alt="CentariAI Dashboard" loading="lazy" />
+          <span class="pcard-badge">DASHBOARD UI</span>
+          <span class="pcard-selected">SELECTED</span>
+        </div>
+        <div class="pcard-body">
+          <h3>CentariAI Dashboard</h3>
+          <p>A dashboard interface designed with a focus on clarity, data visualisation, and modern layout for an AI platform.</p>
+          <div class="pcard-tags">
+            <span>DASHBOARD</span>
+            <span>DATA VIZ</span>
+            <span>FIGMA</span>
+          </div>
+          <div class="pcard-actions">
+            <a href="https://www.figma.com/proto/UgDM584TF2bYHaj94xBDVY/CentariAI?node-id=111-29" target="_blank" class="pcard-btn pcard-btn-outline">View demo</a>
+            <a href="https://www.figma.com/proto/UgDM584TF2bYHaj94xBDVY/CentariAI?node-id=111-29" target="_blank" class="pcard-btn pcard-btn-dark">Case study</a>
           </div>
         </div>
+      </div>
 
-        <div class="Portfolio-detail">
-          <p class="numb">06</p>
+      <!-- Card 6 -->
+      <div class="pcard reveal-item">
+        <div class="pcard-img">
+          <img src="img/silkstrands-preview.png" alt="Silks and Strands" loading="lazy" />
+          <span class="pcard-badge">ECOMMERCE</span>
+          <span class="pcard-selected">SELECTED</span>
+        </div>
+        <div class="pcard-body">
           <h3>Silks &amp; Strands</h3>
-          <p>A modern, fully responsive e-commerce website for a hair and beauty brand. Features product listings, smooth navigation, and a clean aesthetic designed to convert visitors into customers.</p>
-          <div class="tech"><p>HTML, CSS, JavaScript</p></div>
-          <div class="live-github">
-            <a href="https://silkstrands.netlify.app/" target="_blank"><i class='bx bx-link-external'></i><span>Live Project</span></a>
+          <p>A modern, fully responsive e-commerce website for a hair and beauty brand with product listings and smooth navigation.</p>
+          <div class="pcard-tags">
+            <span>ECOMMERCE</span>
+            <span>SHOPPING</span>
+            <span>WEB</span>
+          </div>
+          <div class="pcard-actions">
+            <a href="https://silkstrands.netlify.app/" target="_blank" class="pcard-btn pcard-btn-outline">View demo</a>
+            <a href="https://silkstrands.netlify.app/" target="_blank" class="pcard-btn pcard-btn-dark">Case study</a>
           </div>
         </div>
+      </div>
 
-        <div class="Portfolio-detail">
-          <p class="numb">07</p>
+      <!-- Card 7 -->
+      <div class="pcard reveal-item">
+        <div class="pcard-img">
+          <img src="img/nydra-preview.png" alt="Nydra" loading="lazy" />
+          <span class="pcard-badge">WEB</span>
+          <span class="pcard-selected">SELECTED</span>
+        </div>
+        <div class="pcard-body">
           <h3>Nydra</h3>
-          <p>A sleek and modern website built for Nydra, showcasing a clean layout, engaging visuals, and smooth user experience across all devices.</p>
-          <div class="tech"><p>HTML, CSS, JavaScript</p></div>
-          <div class="live-github">
-            <a href="https://nydra-site.netlify.app/" target="_blank"><i class='bx bx-link-external'></i><span>Live Project</span></a>
+          <p>A sleek and modern website built for Nydra, showcasing a clean layout, engaging visuals, and smooth UX across all devices.</p>
+          <div class="pcard-tags">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JAVASCRIPT</span>
+          </div>
+          <div class="pcard-actions">
+            <a href="https://nydra-site.netlify.app/" target="_blank" class="pcard-btn pcard-btn-outline">View demo</a>
+            <a href="https://nydra-site.netlify.app/" target="_blank" class="pcard-btn pcard-btn-dark">Case study</a>
           </div>
         </div>
-
-        <div class="Portfolio-detail">
-          <p class="numb">08</p>
-          <h3>Jewelry eCommerce UI/UX Design</h3>
-          <p>A modern jewelry eCommerce interface designed with elegant product displays, intuitive navigation, and a seamless shopping experience for users.</p>
-          
-          <div class="tech">
-            <p>Figma, UI/UX Design, Prototyping</p>
-          </div>
-        
-          <div class="live-github">
-            <a href="#" target="_blank">
-              <i class='bx bx-link-external'></i>
-              <span>View Design</span>
-            </a>
-          </div>
-        </div>
-
-        <div class="Portfolio-detail">
-          <p class="numb">09</p>
-          <h3>Fashion eCommerce Website</h3>
-          <p>A stylish and responsive fashion eCommerce website built with HTML, CSS, and JavaScript, featuring product galleries, smooth interactions, and a modern shopping experience.</p>
-          
-          <div class="tech">
-            <p>HTML, CSS, JavaScript, Responsive Design</p>
-          </div>
-        
-          <div class="live-github">
-            <a href="https://github.com/yourusername/fashion-website" target="_blank">
-              <i class='bx bx-code-alt'></i>
-              <span>View Code</span>
-            </a>
-          </div>
-        </div>
-
       </div>
 
-      <div class="Portfolio-carousel">
-        <div class="img-slide-wrapper">
-          <div class="img-item"><img src="img/portfolio1.PNG" alt="Project 1"></div>
-          <div class="img-item"><img src="img/portfolio2.PNG" alt="Project 2"></div>
-          <div class="img-item"><img src="img/portfolio3.png" alt="Project 3"></div>
-          <div class="img-item"><img src="img/portfolio4.PNG" alt="Project 4"></div>
-          <div class="img-item"><img src="img/portfolio5.PNG" alt="Project 5"></div>
-          <div class="img-item"><img src="img/silkstrands-preview.png" alt="Silks &amp; Strands"></div>
-          <div class="img-item"><img src="img/nydra-preview.png" alt="Nydra"></div>
-          <div class="img-item"><img src="img/portfolio8.PNG" alt="Project 8"></div>
-          <div class="img-item"><img src="img/portfolio9.PNG" alt="Project 9"></div>
+      <!-- Card 8 -->
+      <div class="pcard reveal-item">
+        <div class="pcard-img">
+          <img src="img/portfolio8.PNG" alt="Jewelry eCommerce" loading="lazy" />
+          <span class="pcard-badge">UI/UX DESIGN</span>
+          <span class="pcard-selected">SELECTED</span>
         </div>
-        <div class="navigation">
-          <button class="arrow-left"><i class='bx bx-chevron-left'></i></button>
-          <button class="arrow-right"><i class='bx bx-chevron-right'></i></button>
+        <div class="pcard-body">
+          <h3>Jewelry eCommerce</h3>
+          <p>A modern jewelry eCommerce interface with elegant product displays, intuitive navigation, and a seamless shopping experience.</p>
+          <div class="pcard-tags">
+            <span>ECOMMERCE</span>
+            <span>UI/UX</span>
+            <span>PROTOTYPING</span>
+          </div>
+          <div class="pcard-actions">
+            <a href="#" class="pcard-btn pcard-btn-outline">View demo</a>
+            <a href="#" class="pcard-btn pcard-btn-dark">Case study</a>
+          </div>
         </div>
       </div>
+
+      <!-- Card 9 -->
+      <div class="pcard reveal-item">
+        <div class="pcard-img">
+          <img src="img/portfolio9.PNG" alt="Fashion eCommerce" loading="lazy" />
+          <span class="pcard-badge">ECOMMERCE</span>
+          <span class="pcard-selected">SELECTED</span>
+        </div>
+        <div class="pcard-body">
+          <h3>Fashion eCommerce</h3>
+          <p>A stylish and responsive fashion eCommerce website featuring product galleries, smooth interactions, and a modern shopping flow.</p>
+          <div class="pcard-tags">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JAVASCRIPT</span>
+          </div>
+          <div class="pcard-actions">
+            <a href="https://codebyoma01.github.io/LumaMart/" target="_blank" class="pcard-btn pcard-btn-outline">View code</a>
+            <a href="https://codebyoma01.github.io/LumaMart/" target="_blank" class="pcard-btn pcard-btn-dark">Case study</a>
+          </div>
+        </div>
+      </div>
+
     </div>
   </section>
 
+  <!-- CONTACT -->
   <section class="contact" id="contact">
     <div class="contact-container">
-      <div class="contact-box">
-        <h2>Let's Work Together</h2>
+      <div class="contact-box reveal-item">
+        <div class="section-label">Get in touch</div>
+        <h2 class="heading">Let's Work<br /><span>Together</span></h2>
         <p class="desc">Feel free to reach out for collaborations, questions, or freelance opportunities.</p>
         <div class="contact-detail">
-          <i class='bx bxs-phone'></i>
-          <div class="detail"><p>Phone</p><p>(+234 905 939 8498)</p></div>
+          <i class="bx bxs-phone"></i>
+          <div class="detail"><p>Phone</p><p>+234 905 939 8498</p></div>
         </div>
         <div class="contact-detail">
-          <i class='bx bxs-envelope'></i>
+          <i class="bx bxs-envelope"></i>
           <div class="detail"><p>Email</p><p>CodebyOma@gmail.com</p></div>
         </div>
         <div class="contact-detail">
-          <i class='bx bxs-map'></i>
+          <i class="bx bxs-map"></i>
           <div class="detail"><p>Location</p><p>Abuja, Nigeria</p></div>
         </div>
       </div>
 
-      <form id="contact-form">
+      <form id="contact-form" class="reveal-item">
         <h2 class="heading">Contact <span>Me!</span></h2>
         <div class="field-box">
-          <input type="text" name="from_name" placeholder="Full Name" required>
-          <input type="email" name="from_email" placeholder="Email Address" required>
-          <input type="text" name="phone" placeholder="Phone Number">
-          <input type="text" name="subject" placeholder="Email Subject">
-          <textarea name="message" placeholder="Your Message" required></textarea>
+          <input type="text"  name="from_name"  placeholder="Full Name"     required />
+          <input type="email" name="from_email" placeholder="Email Address" required />
+          <input type="text"  name="phone"      placeholder="Phone Number" />
+          <input type="text"  name="subject"    placeholder="Email Subject" />
+          <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
         </div>
         <button type="submit" class="btn">Send Message</button>
         <div id="form-message" class="form-message"></div>
@@ -387,13 +407,13 @@
       <div class="footer-wrapper">
         <div class="footer-brand">
           <h2>Code<span>byOma</span></h2>
-          <p>Crafting clean, responsive, and user-focused digital experiences.</p>
+          <p>Crafting clean, responsive, and user focused digital experiences.</p>
         </div>
         <div class="footer-socials">
-          <a href="https://github.com/codebyoma" target="_blank"><i class="bx bxl-github"></i></a>
-          <a href="https://www.linkedin.com/in/ijeoma-ogbenna-a20771358/" target="_blank"><i class="bx bxl-linkedin"></i></a>
-          <a href="https://www.behance.net/CodebyOma" target="_blank"><i class="bx bxl-behance"></i></a>
-          <a href="https://www.tiktok.com/@codebyoma" target="_blank"><i class="bx bxl-tiktok"></i></a>
+          <a href="https://github.com/codebyoma" target="_blank" aria-label="GitHub"><i class="bx bxl-github"></i></a>
+          <a href="https://www.linkedin.com/in/ijeoma-ogbenna-a20771358/" target="_blank" aria-label="LinkedIn"><i class="bx bxl-linkedin"></i></a>
+          <a href="https://www.behance.net/CodebyOma" target="_blank" aria-label="Behance"><i class="bx bxl-behance"></i></a>
+          <a href="https://www.tiktok.com/@codebyoma" target="_blank" aria-label="TikTok"><i class="bx bxl-tiktok"></i></a>
         </div>
         <div class="footer-bottom">
           &copy; 2026 CodebyOma &mdash; Designed &amp; Built by Ogbenna Ijeoma
@@ -401,6 +421,8 @@
       </div>
     </footer>
   </section>
+
+  <button id="scroll-top" aria-label="Scroll to top"><i class="bx bx-up-arrow-alt"></i></button>
 
   <script src="js/script.js"></script>
 </body>
