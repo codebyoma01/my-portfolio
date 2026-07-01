@@ -1,323 +1,362 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>About | CodebyOma</title>
-  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="css/style.css" />
-  <link rel="stylesheet" href="css/about.css" />
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>About | Code by Oma — Frontend Developer & UI Designer</title>
+<meta name="description" content="Learn more about Ogbenna Ijeoma (Code by Oma) — a self-taught Frontend Developer and UI/UX Designer based in Abuja, Nigeria." />
+<link rel="icon" type="image/png" href="img/logo.png" />
+<link rel="apple-touch-icon" href="img/logo.png" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+<link rel="stylesheet" href="css/style.css" />
+<link rel="stylesheet" href="css/about.css" />
 </head>
-<body class="about-page">
+<body>
 
-  <!-- CUSTOM CURSOR -->
-  <div class="cursor-dot"></div>
-  <div class="cursor-ring"></div>
+<!-- THEME FLASH GUARD -->
+<script>
+(function(){
+  var saved = localStorage.getItem('cbo-theme');
+  document.documentElement.setAttribute('data-theme', saved || 'dark');
+})();
+</script>
 
-  <!-- HEADER -->
-  <header id="header" class="scrolled-up">
-    <a href="index.html" class="logo"><span>Code</span>byOma</a>
-    <i class="bx bx-menu" id="menu-icon"></i>
-    <nav class="navbar">
-      <a href="index.html">Home</a>
-      <a href="index.html#services">Services</a>
-      <a href="about.html" class="active">About</a>
-      <a href="index.html#portfolio">Portfolio</a>
-      <a href="index.html#contact">Contact</a>
-    </nav>
-  </header>
+<!-- CUSTOM CURSOR -->
+<div class="cursor-dot" id="cursorDot"></div>
+<div class="cursor-ring" id="cursorRing"></div>
 
-  <!-- PAGE HERO -->
-  <div class="about-hero">
-    <div class="about-hero-inner">
-      <div class="about-back">
-        <a href="index.html" class="back-link"><i class="bx bx-arrow-back"></i> Back to home</a>
-      </div>
-      <p class="about-hero-label">About me</p>
-      <h1 class="about-hero-title">Ogbenna<br /><em>Ijeoma</em></h1>
-      <p class="about-hero-sub">Frontend Developer &amp; UI Designer based in Abuja, Nigeria.</p>
-      <div class="about-hero-pills">
-        <span><span class="green-dot-sm"></span> Open to work</span>
-        <span>Abuja, Nigeria</span>
-        <span>CodebyOma@gmail.com</span>
+<!-- HEADER -->
+<header id="header" class="scrolled-up">
+  <a href="index.html" class="logo" aria-label="Code by Oma — home">
+    <img src="img/logo.png" alt="Code by Oma logo" class="logo-img" />
+  </a>
+
+  <nav class="navbar" id="navbar">
+    <a href="index.html">Home</a>
+    <a href="index.html#work">Work</a>
+    <a href="index.html#services">Services</a>
+    <a href="about.html" class="active">About</a>
+    <a href="index.html#contact">Contact</a>
+  </nav>
+
+  <div class="header-actions">
+    <button id="themeToggle" class="theme-toggle" aria-label="Toggle light and dark theme">
+      <i class="bx bx-sun icon-sun"></i>
+      <i class="bx bx-moon icon-moon"></i>
+    </button>
+    <a href="assets/my-cv.pdf" target="_blank" class="btn btn-ghost btn-sm header-cv">Resume</a>
+    <button id="menuToggle" class="menu-toggle" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- PAGE HERO -->
+<section class="about-hero">
+  <div class="about-hero-inner">
+    <a href="index.html" class="back-link">
+      <i class="bx bx-arrow-back"></i> Back to home
+    </a>
+    <p class="eyebrow" style="margin-top: 2.4rem;">About me</p>
+    <h1 class="about-hero-title">
+      Ogbenna<br /><em>Ijeoma</em>
+    </h1>
+    <p class="about-hero-sub">
+      Frontend Developer &amp; UI/UX Designer based in Abuja, Nigeria.
+    </p>
+    <div class="about-hero-pills">
+      <span><span class="pulse-dot"></span> Open to work</span>
+      <span><i class="bx bx-map"></i> Abuja, Nigeria</span>
+      <span><i class="bx bx-envelope"></i> CodebyOma@gmail.com</span>
+    </div>
+  </div>
+</section>
+
+<!-- MAIN CONTENT -->
+<main class="about-main">
+
+  <!-- ── STORY ── -->
+  <div class="about-block reveal-item">
+    <div class="about-block-left">
+      <p class="eyebrow">My Story</p>
+      <h2 class="section-title">Self-taught.<br />Detail-obsessed.<br /><em>Builder.</em></h2>
+    </div>
+    <div class="about-block-right">
+      <p class="about-lead">I'm Ijeoma  known online as Code by Oma. I'm a self-taught Frontend Developer and UI/UX Designer based in Abuja, Nigeria, and I build websites that businesses are proud to share.</p>
+      <p class="about-body">My path into tech wasn't traditional. I taught myself to code from scratch, starting with the fundamentals of HTML and CSS and working my way up to JavaScript, React, and Next.js. Along the way I discovered that I cared just as much about how a product looks and feels as how it works  so design became as central to my practice as development.</p>
+      <p class="about-body">That combination is rare. Most developers hand off to a designer. Most designers hand off to a developer. I do both  which means the layout you approve is the layout you ship, with nothing lost in translation.</p>
+      <p class="about-body">I work with businesses and startups across Nigeria and beyond, building everything from landing pages and e-commerce stores to full web applications and product dashboards. My clients come back  and they send referrals  because I care about the details that most people skip: spacing that breathes, motion that has a reason, and code that holds up on every screen size.</p>
+      <div class="about-actions">
+        <a href="assets/my-cv.pdf" target="_blank" class="btn btn-primary">
+          <i class="bx bx-download"></i> Download CV
+        </a>
+        <a href="index.html#contact" class="btn btn-outline">Get in touch</a>
       </div>
     </div>
   </div>
 
-  <!-- MAIN ABOUT CONTENT -->
-  <main class="about-main">
+  <!-- ── EXPERIENCE ── -->
+  <div class="about-block reveal-item">
+    <div class="about-block-left">
+      <p class="eyebrow">Experience</p>
+      <h2 class="section-title">Roles &amp;<br /><em>projects</em></h2>
+      <p class="about-block-desc">Hands-on work across design and development, focused on shipping real products on time.</p>
+    </div>
+    <div class="about-block-right">
+      <div class="exp-list">
 
-    <!-- ── BLOCK 1: Experience ── -->
-    <div class="ab-row reveal-item">
-      <div class="ab-left">
-        <div class="ab-label">Experience</div>
-        <h2 class="ab-title">Product-driven experience</h2>
-        <p class="ab-desc">A mix of hands-on roles across web and product design, focused on clarity, usability, and delivering on time.</p>
-        <div class="ab-tags">
-          <span>Frontend</span>
-          <span>UI Design</span>
-          <span>Product UX</span>
-          <span>Figma</span>
-        </div>
-      </div>
-
-      <div class="ab-right">
-        <div class="ab-card-label-top">
-          <span class="ab-card-label">PROFESSIONAL ROLES</span>
-          <span class="ab-count-badge">4 roles</span>
-        </div>
-        <h3 class="ab-right-title">Design &amp; development impact</h3>
-
-        <div class="exp-card">
-          <div class="exp-card-head">
-            <span class="exp-role">Product Designer</span>
-            <span class="exp-date">2025 – Present</span>
+        <div class="exp-item">
+          <div class="exp-item-head">
+            <div>
+              <h3 class="exp-item-role">Product Designer</h3>
+              <p class="exp-item-company">Marketa &nbsp;·&nbsp; Nigeria</p>
+            </div>
+            <span class="exp-item-date">2025 – Present</span>
           </div>
-          <p class="exp-company">Marketa &nbsp;·&nbsp; Nigeria</p>
-          <p class="exp-desc">Designed user interfaces and improved user flows for web applications. Collaborated on frontend implementation and API integration.</p>
-          <ul class="exp-bullets">
-            <li>End-to-end UI design for marketplace features</li>
-            <li>Collaborated on frontend and API integration</li>
-            <li>Created wireframes, prototypes, and design specs</li>
-          </ul>
+          <p class="exp-item-desc">Designed end-to-end UI for a marketplace platform  from wireframes and user flows through to high-fidelity prototypes ready for frontend implementation.</p>
+          <div class="exp-item-tags">
+            <span>Figma</span><span>UI Design</span><span>Prototyping</span>
+          </div>
         </div>
 
-        <div class="exp-card">
-          <div class="exp-card-head">
-            <span class="exp-role">Web Designer</span>
-            <span class="exp-date">2026</span>
+        <div class="exp-item">
+          <div class="exp-item-head">
+            <div>
+              <h3 class="exp-item-role">Frontend Developer &amp; Designer</h3>
+              <p class="exp-item-company">SafeHome Properties &nbsp;·&nbsp; Nigeria</p>
+            </div>
+            <span class="exp-item-date">2026</span>
           </div>
-          <p class="exp-company">Silks &amp; Strands &nbsp;·&nbsp; Nigeria</p>
-          <p class="exp-desc">Designed and developed a fully responsive e-commerce website for a hair and beauty brand.</p>
-          <ul class="exp-bullets">
-            <li>Product pages with clean UI and smooth navigation</li>
-            <li>Optimized layout for user engagement and conversion</li>
-          </ul>
+          <p class="exp-item-desc">Designed and developed the full public-facing website for a real estate platform  responsive across all devices with a clean, trust-building visual identity.</p>
+          <div class="exp-item-tags">
+            <span>Next.js</span><span>React</span><span>Tailwind CSS</span><span>TypeScript</span>
+          </div>
         </div>
 
-        <div class="exp-card">
-          <div class="exp-card-head">
-            <span class="exp-role">Web Designer</span>
-            <span class="exp-date">2025</span>
+        <div class="exp-item">
+          <div class="exp-item-head">
+            <div>
+              <h3 class="exp-item-role">Frontend Developer &amp; Designer</h3>
+              <p class="exp-item-company">WealthPrint &nbsp;·&nbsp; Nigeria</p>
+            </div>
+            <span class="exp-item-date">2026</span>
           </div>
-          <p class="exp-company">SafeHomes Management &nbsp;·&nbsp; Nigeria</p>
-          <p class="exp-desc">Designed intuitive UI layouts and user journeys for a real estate platform.</p>
-          <ul class="exp-bullets">
-            <li>Wireframes and prototypes for key user flows</li>
-            <li>Focused on usability and visual hierarchy</li>
-          </ul>
+          <p class="exp-item-desc">Built a premium landing page for a personal finance product  conversion-focused layout, smooth animations, and a polished visual design.</p>
+          <div class="exp-item-tags">
+            <span>Next.js</span><span>React</span><span>Tailwind CSS</span><span>TypeScript</span>
+          </div>
         </div>
 
-        <div class="exp-card">
-          <div class="exp-card-head">
-            <span class="exp-role">Product Designer</span>
-            <span class="exp-date">2026</span>
+        <div class="exp-item">
+          <div class="exp-item-head">
+            <div>
+              <h3 class="exp-item-role">Web Designer &amp; Developer</h3>
+              <p class="exp-item-company">Silks &amp; Strands &nbsp;·&nbsp; Nigeria</p>
+            </div>
+            <span class="exp-item-date">2026</span>
           </div>
-          <p class="exp-company">CentariAI &nbsp;·&nbsp; Nigeria</p>
-          <p class="exp-desc">Designed dashboard interfaces for data visualization and improved UX through modern UI design.</p>
-          <ul class="exp-bullets">
-            <li>Dashboard UI focused on clarity and data readability</li>
-            <li>Collaborated on frontend structure and layout</li>
-          </ul>
+          <p class="exp-item-desc">Designed and built a fully responsive e-commerce site for a luxury hair brand  elegant product layouts with a premium, restrained visual style.</p>
+          <div class="exp-item-tags">
+            <span>HTML</span><span>CSS</span><span>JavaScript</span>
+          </div>
         </div>
+
+        <div class="exp-item">
+          <div class="exp-item-head">
+            <div>
+              <h3 class="exp-item-role">Web Designer &amp; Developer</h3>
+              <p class="exp-item-company">Juicy Culinary &nbsp;·&nbsp; Nigeria</p>
+            </div>
+            <span class="exp-item-date">2025</span>
+          </div>
+          <p class="exp-item-desc">Built a catering business website showcasing services, menus, and brand identity  designed to convert visitors into clients.</p>
+          <div class="exp-item-tags">
+            <span>HTML</span><span>CSS</span><span>JavaScript</span>
+          </div>
+        </div>
+
+        <div class="exp-item">
+          <div class="exp-item-head">
+            <div>
+              <h3 class="exp-item-role">Product Designer</h3>
+              <p class="exp-item-company">CentariAI &nbsp;·&nbsp; Nigeria</p>
+            </div>
+            <span class="exp-item-date">2026</span>
+          </div>
+          <p class="exp-item-desc">Designed a dashboard interface for an AI platform  focused on data clarity, visual hierarchy, and making complex information feel immediately accessible.</p>
+          <div class="exp-item-tags">
+            <span>Figma</span><span>Dashboard UI</span><span>Data Viz</span>
+          </div>
+        </div>
+
       </div>
     </div>
-
-    <!-- ── BLOCK 2: Skills ── -->
-    <div class="ab-row reveal-item">
-      <div class="ab-left">
-        <div class="ab-label">Skills</div>
-        <h2 class="ab-title">Tools &amp; technologies</h2>
-        <p class="ab-desc">My core stack spans both design and code giving me the ability to go from concept to shipped product without losing quality at any stage.</p>
-        <div class="ab-tags">
-          <span>Frontend</span>
-          <span>Design</span>
-          <span>Prototyping</span>
-        </div>
-      </div>
-
-      <div class="ab-right">
-        <div class="ab-card-label-top">
-          <span class="ab-card-label">CASE STUDY EXPERIENCE</span>
-          <span class="ab-count-badge">4 skills</span>
-        </div>
-        <h3 class="ab-right-title">Design &amp; frontend toolkit</h3>
-
-        <div class="skills-case-grid">
-          <div class="skill-case-card">
-            <div class="skill-case-top">
-              <span class="skill-case-type">DESIGN</span>
-              <span class="skill-case-cat">UI/UX · FIGMA</span>
-            </div>
-            <h4>Figma &amp; UI Design</h4>
-            <p>End-to-end product design from wireframes to high-fidelity prototypes with interactive components.</p>
-            <ul class="exp-bullets">
-              <li>Component libraries and design systems</li>
-              <li>User flow mapping and interaction design</li>
-            </ul>
-            <div class="pcard-tags" style="margin-top:1.5rem">
-              <span>FIGMA</span><span>PROTOTYPING</span><span>UI/UX</span>
-            </div>
-          </div>
-
-          <div class="skill-case-card">
-            <div class="skill-case-top">
-              <span class="skill-case-type">CODE</span>
-              <span class="skill-case-cat">HTML · CSS · JS</span>
-            </div>
-            <h4>Frontend Development</h4>
-            <p>Building responsive, performant websites that work beautifully across all devices and screen sizes.</p>
-            <ul class="exp-bullets">
-              <li>Semantic HTML and modern CSS layouts</li>
-              <li>Interactive JavaScript and smooth animations</li>
-            </ul>
-            <div class="pcard-tags" style="margin-top:1.5rem">
-              <span>HTML</span><span>CSS</span><span>JAVASCRIPT</span>
-            </div>
-          </div>
-
-          <div class="skill-case-card">
-            <div class="skill-case-top">
-              <span class="skill-case-type">TOOLS</span>
-              <span class="skill-case-cat">GIT · SEO</span>
-            </div>
-            <h4>Dev Tools &amp; SEO</h4>
-            <p>Version control with Git/GitHub. SEO practices to ensure sites are discoverable and performant.</p>
-            <ul class="exp-bullets">
-              <li>Git workflows and collaborative code</li>
-              <li>Performance and page-speed improvements</li>
-            </ul>
-            <div class="pcard-tags" style="margin-top:1.5rem">
-              <span>GIT</span><span>GITHUB</span><span>SEO</span>
-            </div>
-          </div>
-
-          <div class="skill-case-card">
-            <div class="skill-case-top">
-              <span class="skill-case-type">EXTRA</span>
-              <span class="skill-case-cat">PYTHON · DJANGO</span>
-            </div>
-            <h4>Backend Basics</h4>
-            <p>Basic Python and Django to understand full-stack context and collaborate with backend teams.</p>
-            <ul class="exp-bullets">
-              <li>REST API consumption and integration</li>
-              <li>Template rendering with Django</li>
-            </ul>
-            <div class="pcard-tags" style="margin-top:1.5rem">
-              <span>PYTHON</span><span>DJANGO</span><span>APIs</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- ── BLOCK 3: Personal + Education ── -->
-    <div class="ab-row reveal-item">
-      <div class="ab-left">
-        <div class="ab-label">Personal</div>
-        <h2 class="ab-title">The person behind the work</h2>
-        <p class="ab-desc">I care about clean, functional design that actually serves users. I enjoy learning, building, and shipping work I'm proud of.</p>
-        <div class="ab-tags">
-          <span>Detail-oriented</span>
-          <span>Collaborative</span>
-          <span>Fast learner</span>
-        </div>
-        <div class="ab-actions" style="margin-top:2rem">
-          <a href="assets/my-cv.pdf" target="_blank" class="ab-btn"><i class="bx bx-download"></i> Download CV</a>
-        </div>
-      </div>
-
-      <div class="ab-right">
-        <div class="about-info-grid">
-          <div class="about-info-card">
-            <span class="about-info-label">Name</span>
-            <span class="about-info-val">Ogbenna Ijeoma</span>
-          </div>
-          <div class="about-info-card">
-            <span class="about-info-label">Location</span>
-            <span class="about-info-val">Abuja, Nigeria</span>
-          </div>
-          <div class="about-info-card">
-            <span class="about-info-label">Email</span>
-            <span class="about-info-val">CodebyOma@gmail.com</span>
-          </div>
-          <div class="about-info-card">
-            <span class="about-info-label">Employment</span>
-            <span class="about-info-val">Full-time / Freelance</span>
-          </div>
-          <div class="about-info-card">
-            <span class="about-info-label">Language</span>
-            <span class="about-info-val">English</span>
-          </div>
-          <div class="about-info-card">
-            <span class="about-info-label">Availability</span>
-            <span class="about-info-val" style="color:#22c55e">Open to work</span>
-          </div>
-        </div>
-
-        <div class="edu-block">
-          <div class="ab-card-label-top" style="margin-bottom:2rem">
-            <span class="ab-card-label">EDUCATION</span>
-          </div>
-          <div class="exp-card">
-            <div class="exp-card-head">
-              <span class="exp-role">Web Dev &amp; UI/UX Design</span>
-              <span class="exp-date">2024</span>
-            </div>
-            <p class="exp-company">Bizmarrow Technologies</p>
-          </div>
-          <div class="exp-card">
-            <div class="exp-card-head">
-              <span class="exp-role">Python &amp; Django Framework</span>
-              <span class="exp-date">2025</span>
-            </div>
-            <p class="exp-company">Bizmarrow Technologies</p>
-          </div>
-          <div class="exp-card">
-            <div class="exp-card-head">
-              <span class="exp-role">Full Stack Development</span>
-              <span class="exp-date">2025</span>
-            </div>
-            <p class="exp-company">Coursera Online Courses</p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-  </main>
-
-  <!-- CTA -->
-  <div class="about-cta reveal-item">
-    <p class="about-cta-label">Let's build something</p>
-    <h2 class="about-cta-title">Ready to work together?</h2>
-    <a href="index.html#contact" class="btn">Get in touch <i class="bx bx-right-arrow-alt"></i></a>
   </div>
 
-  <!-- FOOTER -->
-  <footer class="footer" style="padding: 4rem 8%;">
-    <div class="footer-wrapper">
-      <div class="footer-brand">
-        <h2>Code<span>byOma</span></h2>
-        <p>Crafting clean, responsive, and user focused digital experiences.</p>
-      </div>
-      <div class="footer-socials">
-        <a href="https://github.com/codebyoma" target="_blank" aria-label="GitHub"><i class="bx bxl-github"></i></a>
-        <a href="https://www.linkedin.com/in/ijeoma-ogbenna-a20771358/" target="_blank" aria-label="LinkedIn"><i class="bx bxl-linkedin"></i></a>
-        <a href="https://www.behance.net/CodebyOma" target="_blank" aria-label="Behance"><i class="bx bxl-behance"></i></a>
-        <a href="https://www.tiktok.com/@codebyoma" target="_blank" aria-label="TikTok"><i class="bx bxl-tiktok"></i></a>
-      </div>
-      <div class="footer-bottom">
-        &copy; 2026 CodebyOma &mdash; Designed &amp; Built by Ogbenna Ijeoma
+  <!-- ── SKILLS ── -->
+  <div class="about-block reveal-item">
+    <div class="about-block-left">
+      <p class="eyebrow">Skills</p>
+      <h2 class="section-title">Tools &amp;<br /><em>technologies</em></h2>
+      <p class="about-block-desc">My stack spans both design and code  from concept in Figma to shipped product in the browser.</p>
+    </div>
+    <div class="about-block-right">
+      <div class="skills-grid">
+
+        <div class="skill-card">
+          <div class="skill-card-top">
+            <span class="skill-card-type">Design</span>
+            <i class="bx bx-palette"></i>
+          </div>
+          <h3>UI / UX Design</h3>
+          <p>End-to-end product design from wireframes to polished, interactive prototypes.</p>
+          <div class="skill-tags">
+            <span>Figma</span><span>Wireframing</span><span>Prototyping</span><span>Design Systems</span>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-card-top">
+            <span class="skill-card-type">Code</span>
+            <i class="bx bx-code-alt"></i>
+          </div>
+          <h3>Frontend Development</h3>
+          <p>Responsive, performant websites built to work beautifully across every device.</p>
+          <div class="skill-tags">
+            <span>HTML</span><span>CSS</span><span>JavaScript</span><span>React</span><span>Next.js</span><span>Tailwind</span>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-card-top">
+            <span class="skill-card-type">Tools</span>
+            <i class="bx bx-git-branch"></i>
+          </div>
+          <h3>Dev Tools &amp; SEO</h3>
+          <p>Version control, deployment workflows, and on-page SEO best practices.</p>
+          <div class="skill-tags">
+            <span>Git</span><span>GitHub</span><span>Netlify</span><span>Vercel</span><span>SEO</span>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-card-top">
+            <span class="skill-card-type">Extra</span>
+            <i class="bx bx-server"></i>
+          </div>
+          <h3>Backend Basics</h3>
+          <p>Enough Python and Django to collaborate with backend teams and consume REST APIs confidently.</p>
+          <div class="skill-tags">
+            <span>Python</span><span>Django</span><span>REST APIs</span>
+          </div>
+        </div>
+
       </div>
     </div>
-  </footer>
+  </div>
 
-  <!-- SCROLL TOP -->
-  <button id="scroll-top" aria-label="Scroll to top"><i class="bx bx-up-arrow-alt"></i></button>
+  <!-- ── PERSONAL INFO + EDUCATION ── -->
+  <div class="about-block reveal-item">
+    <div class="about-block-left">
+      <p class="eyebrow">Personal</p>
+      <h2 class="section-title">The person<br />behind the<br /><em>work.</em></h2>
+    </div>
+    <div class="about-block-right">
 
-  <script src="js/about.js"></script>
+      <div class="info-grid">
+        <div class="info-card">
+          <span class="info-label">Name</span>
+          <span class="info-val">Ogbenna Ijeoma</span>
+        </div>
+        <div class="info-card">
+          <span class="info-label">Location</span>
+          <span class="info-val">Abuja, Nigeria</span>
+        </div>
+        <div class="info-card">
+          <span class="info-label">Email</span>
+          <span class="info-val">CodebyOma@gmail.com</span>
+        </div>
+        <div class="info-card">
+          <span class="info-label">Availability</span>
+          <span class="info-val info-val-green">Open to work</span>
+        </div>
+        <div class="info-card">
+          <span class="info-label">Employment</span>
+          <span class="info-val">Full-time / Freelance</span>
+        </div>
+        <div class="info-card">
+          <span class="info-label">Language</span>
+          <span class="info-val">English</span>
+        </div>
+      </div>
+
+      <div class="edu-section">
+        <p class="eyebrow" style="margin-bottom: 2rem;">Education</p>
+        <div class="edu-list">
+          <div class="edu-item">
+            <div class="edu-item-head">
+              <h4>Web Development &amp; UI/UX Design</h4>
+              <span>2024</span>
+            </div>
+            <p>Bizmarrow Technologies</p>
+          </div>
+          <div class="edu-item">
+            <div class="edu-item-head">
+              <h4>Python &amp; Django Framework</h4>
+              <span>2025</span>
+            </div>
+            <p>Bizmarrow Technologies</p>
+          </div>
+          <div class="edu-item">
+            <div class="edu-item-head">
+              <h4>Full Stack Development</h4>
+              <span>2025</span>
+            </div>
+            <p>Coursera Online Courses</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</main>
+
+<!-- CTA -->
+<section class="about-cta">
+  <div class="about-cta-inner reveal-item">
+    <p class="eyebrow">Let's build something</p>
+    <h2 class="section-title">Ready to work<br /><em>together?</em></h2>
+    <p class="about-cta-sub">Have a project in mind? I'd love to hear about it.</p>
+    <a href="index.html#contact" class="btn btn-primary">
+      Get in touch <i class="bx bx-right-arrow-alt"></i>
+    </a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-wrapper">
+    <div class="footer-logo-wrap">
+      <img src="img/logo.png" alt="Code by Oma" class="footer-logo-img" />
+      <p class="footer-tagline">Frontend Developer &amp; UI/UX Designer  Abuja, Nigeria.</p>
+    </div>
+    <div class="footer-socials">
+      <a href="https://github.com/codebyoma" target="_blank" aria-label="GitHub"><i class="bx bxl-github"></i></a>
+      <a href="https://www.linkedin.com/in/ijeoma-ogbenna-a20771358/" target="_blank" aria-label="LinkedIn"><i class="bx bxl-linkedin"></i></a>
+      <a href="https://www.behance.net/CodebyOma" target="_blank" aria-label="Behance"><i class="bx bxl-behance"></i></a>
+      <a href="https://www.tiktok.com/@codebyoma" target="_blank" aria-label="TikTok"><i class="bx bxl-tiktok"></i></a>
+    </div>
+    <p class="footer-copy">&copy; 2026 Code by Oma  Designed &amp; built by Ogbenna Ijeoma.</p>
+  </div>
+</footer>
+
+<button id="scrollTop" aria-label="Scroll to top"><i class="bx bx-up-arrow-alt"></i></button>
+
+<script src="js/about.js"></script>
 </body>
 </html>
